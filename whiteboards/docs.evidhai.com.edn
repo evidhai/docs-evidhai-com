@@ -294,7 +294,36 @@
 :parentId "673d627d-5fa8-40e3-82f0-31cb9b042048"
 :nonce 1732076487456
 :italic false}}
-:block/updated-at 1732076495182})
+:block/updated-at 1732076495182} 
+{:block/created-at 1732076503015
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:borderRadius 0
+:index 12
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "text"
+:size [56 34]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "f1088dd0-a6f6-11ef-90f2-331d14f326c7"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [2520 160]
+:lineHeight 1.2
+:fontSize 20
+:parentId "673d627d-5fa8-40e3-82f0-31cb9b042048"
+:nonce 1732076500795
+:italic false
+:text "ACM"}}
+:block/updated-at 1732076503015})
 :pages (
 {:block/uuid #uuid "673d627d-5fa8-40e3-82f0-31cb9b042048"
 :block/properties 
@@ -321,8 +350,8 @@
 :type "image"
 :src "../assets/image_1732076438563_0.png"
 :size [410 414]}]
-:shapes-index ("97a8ea50-a6f6-11ef-90f2-331d14f326c7" "98f78a60-a6f6-11ef-90f2-331d14f326c7" "9a141df0-a6f6-11ef-90f2-331d14f326c7" "9aad29a0-a6f6-11ef-90f2-331d14f326c7" "9b4f8420-a6f6-11ef-90f2-331d14f326c7" "9d4f72d2-a6f6-11ef-90f2-331d14f326c7" "b2b9c760-a6f6-11ef-90f2-331d14f326c7" "cbf93fd0-a6f6-11ef-90f2-331d14f326c7" "d147bd41-a6f6-11ef-90f2-331d14f326c7" "d5ba0b80-a6f6-11ef-90f2-331d14f326c7" "dbaabc60-a6f6-11ef-90f2-331d14f326c7" "e90c5580-a6f6-11ef-90f2-331d14f326c7")}}
-:block/updated-at 1732076495182
+:shapes-index ("97a8ea50-a6f6-11ef-90f2-331d14f326c7" "98f78a60-a6f6-11ef-90f2-331d14f326c7" "9a141df0-a6f6-11ef-90f2-331d14f326c7" "9aad29a0-a6f6-11ef-90f2-331d14f326c7" "9b4f8420-a6f6-11ef-90f2-331d14f326c7" "9d4f72d2-a6f6-11ef-90f2-331d14f326c7" "b2b9c760-a6f6-11ef-90f2-331d14f326c7" "cbf93fd0-a6f6-11ef-90f2-331d14f326c7" "d147bd41-a6f6-11ef-90f2-331d14f326c7" "d5ba0b80-a6f6-11ef-90f2-331d14f326c7" "dbaabc60-a6f6-11ef-90f2-331d14f326c7" "e90c5580-a6f6-11ef-90f2-331d14f326c7" "f1088dd0-a6f6-11ef-90f2-331d14f326c7")}}
+:block/updated-at 1732076503015
 :block/created-at 1732076157992
 :block/type "whiteboard"
 :block/name "docs.evidhai.com"
