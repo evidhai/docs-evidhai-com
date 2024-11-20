@@ -104,7 +104,8 @@
 :nonce 1732076356976
 :isComplete true}}
 :block/updated-at 1732076362614} 
-{:block/properties 
+{:block/created-at 1732076396250
+:block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:stroke ""
@@ -137,7 +138,26 @@
 :parentId "673d627d-5fa8-40e3-82f0-31cb9b042048"
 :nonce 1732076360385
 :italic false}}
-:block/updated-at 1732076362618})
+:block/updated-at 1732076396250} 
+{:block/created-at 1732076398367
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 6
+:scale [1 1]
+:type "image"
+:assetId "b2b7cb90-a6f6-11ef-90f2-331d14f326c7"
+:size [224 191]
+:opacity 1
+:id "b2b9c760-a6f6-11ef-90f2-331d14f326c7"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [2552 192]
+:parentId "673d627d-5fa8-40e3-82f0-31cb9b042048"
+:nonce 1732076396324
+:clipping 0}}
+:block/updated-at 1732076398367})
 :pages (
 {:block/uuid #uuid "673d627d-5fa8-40e3-82f0-31cb9b042048"
 :block/properties 
@@ -148,9 +168,13 @@
 :bindings 
 {}
 :nonce 1
-:assets []
-:shapes-index ("97a8ea50-a6f6-11ef-90f2-331d14f326c7" "98f78a60-a6f6-11ef-90f2-331d14f326c7" "9a141df0-a6f6-11ef-90f2-331d14f326c7" "9aad29a0-a6f6-11ef-90f2-331d14f326c7" "9b4f8420-a6f6-11ef-90f2-331d14f326c7" "9d4f72d2-a6f6-11ef-90f2-331d14f326c7")}}
-:block/updated-at 1732076362609
+:assets [
+{:id "b2b7cb90-a6f6-11ef-90f2-331d14f326c7"
+:type "image"
+:src "../assets/image_1732076396192_0.png"
+:size [448 382]}]
+:shapes-index ("97a8ea50-a6f6-11ef-90f2-331d14f326c7" "98f78a60-a6f6-11ef-90f2-331d14f326c7" "9a141df0-a6f6-11ef-90f2-331d14f326c7" "9aad29a0-a6f6-11ef-90f2-331d14f326c7" "9b4f8420-a6f6-11ef-90f2-331d14f326c7" "9d4f72d2-a6f6-11ef-90f2-331d14f326c7" "b2b9c760-a6f6-11ef-90f2-331d14f326c7")}}
+:block/updated-at 1732076398364
 :block/created-at 1732076157992
 :block/type "whiteboard"
 :block/name "docs.evidhai.com"
