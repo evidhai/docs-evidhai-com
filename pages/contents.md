@@ -1,5 +1,3 @@
 - [[Welcome]]
 - [[Contact Us]]
 - [[Tags]]
-- [[Journals]]
--
