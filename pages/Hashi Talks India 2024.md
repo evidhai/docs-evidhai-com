@@ -1,5 +1,4 @@
 - Code Link : https://github.com/evidhai/infra-streamline
 - ![image.png](../assets/image_1732166772272_0.png){:height 435, :width 200}
 - ![streamline_infra.pdf](../assets/streamline_infra_1732212362171_0.pdf)
-- Live link: [here](https://www.youtube.com/live/TL4QNrDsXRM?si=47HnyhxjOxz-MXdS)
--
+- Live link: [here](https://www.youtube.com/live/TL4QNrDsXRM?si=zGCv-Q1EqWljNLm4&t=7284)
