@@ -1,3 +1,3 @@
-- ![image.png](../assets/image_1732166772272_0.png){:height 20, :width 200}
+- ![image.png](../assets/image_1732166772272_0.png){:height 435, :width 200}
 -
 - Live link: {{video https://www.youtube.com/live/TL4QNrDsXRM?si=47HnyhxjOxz-MXdS}}
