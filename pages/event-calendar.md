@@ -1,1 +1,1 @@
-- Attending  [AWS Community Day - Bangalore](https://acd.awsugblr.in/) [[May 23rd, 2025]] to
+- Attending  [AWS Community Day - Bangalore](https://acd.awsugblr.in/) [[May 23rd, 2025]] to [[May 24th,2025]]
