@@ -315,37 +315,66 @@
 		  
 		  <!-- notionvc: 413d4277-dd01-4d13-8a5b-e0987a96141d -->
 	- ### Vocabulary set 2 summary
-	- **Responsible AI**: Emphasizes the importance of
-	  ethical, lawful, and transparent AI practices to ensure trust and
-	  confidence in AI systems. It involves setting principles and frameworks
-	  to govern AI's impact on humanity.
-	- **Labelled Data**: Refers to data tagged with
-	  informative labels, aiding machine learning models in understanding and
-	  learning from raw data. It requires human intervention for accurate
-	  labeling.
-	- **Supervised Learning**: A machine learning method using labeled datasets to predict outputs. The algorithm learns the
-	  relationship between input and output data, with corrections made for
-	  errors during training.
-	- **Unsupervised Learning**: Involves learning from
-	  unlabeled data, where the model autonomously identifies patterns and
-	  relationships within the data without predefined labels.
-	- **Semi-supervised Learning**: Combines supervised and
-	  unsupervised learning, using a small set of labeled data alongside a
-	  larger set of unlabeled data to improve model training efficiency.
-	- **Prompt Engineering**: Involves refining input prompts
-	  for large language models to optimize their output. It enhances AI
-	  performance by adjusting prompts to produce more relevant responses.
-	- **Prompt Chaining**: A technique for creating
-	  conversational interactions with language models by using a series of
-	  prompts, enhancing contextual awareness and user experience, often used
-	  in chatbots.
-	- **Retrieval Augmented Generation (RAG)**: A framework
-	  that supplements AI models with external factual data to generate
-	  accurate and up-to-date responses, enhancing the model's reliability.
-	- **Parameters**: Variables within a machine learning
-	  model that are adjusted during training to optimize performance and
-	  improve the model's ability to generalize data patterns.
-	- **Fine Tuning**: The process of adjusting a pre-trained
-	  model on specific tasks or datasets to enhance its performance, allowing it to adapt to new data and improve accuracy for targeted applications.
-	  
-	  <!-- notionvc: c9c53eed-11d2-489e-8ed9-881d18d85ec7 -->
+	  collapsed:: true
+		- **Responsible AI**: Emphasizes the importance of
+		  ethical, lawful, and transparent AI practices to ensure trust and
+		  confidence in AI systems. It involves setting principles and frameworks
+		  to govern AI's impact on humanity.
+		- **Labelled Data**: Refers to data tagged with
+		  informative labels, aiding machine learning models in understanding and
+		  learning from raw data. It requires human intervention for accurate
+		  labeling.
+		- **Supervised Learning**: A machine learning method using labeled datasets to predict outputs. The algorithm learns the
+		  relationship between input and output data, with corrections made for
+		  errors during training.
+		- **Unsupervised Learning**: Involves learning from
+		  unlabeled data, where the model autonomously identifies patterns and
+		  relationships within the data without predefined labels.
+		- **Semi-supervised Learning**: Combines supervised and
+		  unsupervised learning, using a small set of labeled data alongside a
+		  larger set of unlabeled data to improve model training efficiency.
+		- **Prompt Engineering**: Involves refining input prompts
+		  for large language models to optimize their output. It enhances AI
+		  performance by adjusting prompts to produce more relevant responses.
+		- **Prompt Chaining**: A technique for creating
+		  conversational interactions with language models by using a series of
+		  prompts, enhancing contextual awareness and user experience, often used
+		  in chatbots.
+		- **Retrieval Augmented Generation (RAG)**: A framework
+		  that supplements AI models with external factual data to generate
+		  accurate and up-to-date responses, enhancing the model's reliability.
+		- **Parameters**: Variables within a machine learning
+		  model that are adjusted during training to optimize performance and
+		  improve the model's ability to generalize data patterns.
+		- **Fine Tuning**: The process of adjusting a pre-trained
+		  model on specific tasks or datasets to enhance its performance, allowing it to adapt to new data and improve accuracy for targeted applications.
+		  
+		  <!-- notionvc: c9c53eed-11d2-489e-8ed9-881d18d85ec7 -->
+	- ### Vocabulary set 3 summary
+	  collapsed:: true
+		- **Bias**: In machine learning, bias refers to the
+		  distortion in data that can lead to unfair and inaccurate model
+		  outcomes. High-quality data is crucial to avoid biased results.
+		- **Hallucinations**: AI hallucinations occur when AI
+		  generates false responses that seem factual. They can result from biased data or misinterpretation during training.
+		- **Temperature**: This parameter in AI models controls
+		  the randomness of output. A lower temperature results in more focused
+		  responses, while a higher temperature leads to more diverse outputs.
+		- **Anthropomorphism**: This is the attribution of human
+		  traits to non-human entities, including AI. As AI becomes more complex,
+		  people may start to anthropomorphize it, affecting interactions.
+		- **Completion**: In NLP, completion refers to the output generated by a model in response to a prompt, such as an answer from a chatbot.
+		- **Tokens**: Tokens are the basic units of text input for AI models, which can be words or parts of words. They are essential for processing and generating responses.
+		- **Emergence in AI**: Emergence occurs when large models
+		  exhibit unexpected behaviors not seen in smaller models, potentially
+		  leading to unanticipated and harmful outcomes.
+		- **Embeddings**: These are numerical representations of
+		  data in multi-dimensional space, capturing semantic relationships. They
+		  enhance AI's ability to understand language and images efficiently.
+		- **Text Classification**: This involves training models
+		  to categorize text based on content, using NLP to understand patterns
+		  and context for tasks like sentiment analysis and topic categorization.
+		- **Context Window**: This refers to the amount of text an AI model can process at once, determined by the number of tokens. It
+		  influences how prompts are engineered for effective responses.
+		  
+		  <!-- notionvc: 12bad55a-4c14-4c38-8f4f-f16cc8f6aee0 -->
