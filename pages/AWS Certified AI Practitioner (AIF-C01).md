@@ -279,4 +279,73 @@
 	  | Compliance and governance | AWS Config, Amazon Inspector, AWS Audit Manager, AWS Artifact, AWS CloudTrail, AWS Trusted Advisor |  |
 	  | Data governance strategies | AWS CloudTrail, Amazon Macie, AWS Audit Manager, Amazon S3, Amazon RDS, Amazon Redshift, AWS Glue, Lake Formation |  |
 - Day 3
-	-
+	- ### Vocabulary set 1 summary
+	  collapsed:: true
+		- **Artificial Intelligence (AI):** AI simulates human
+		  intelligence through computer systems, capable of performing tasks that
+		  typically require human intelligence.
+		- **Machine Learning (ML):** A subset of AI, ML enables
+		  systems to learn from data and improve over time without human
+		  intervention, using mathematical algorithms to identify patterns and
+		  make predictions.
+		- **Artificial Neural Networks (ANN):** A subset of ML,
+		  ANNs mimic the human brain's network to recognize patterns and improve
+		  accuracy through interconnected nodes and neurons.
+		- **Deep Learning (DL):** Utilizes ANNs to analyze
+		  patterns in data, commonly applied to sound, text, and images, using
+		  multiple network layers to identify complex patterns.
+		- **Generative AI (GAI):** A subset of DL, GAI models
+		  create new content (e.g., images, text, audio) using large datasets,
+		  producing outputs that resemble human-created content.
+		- **Foundation Models (FM):** Trained on extensive
+		  datasets, FMs serve as the basis for developing models that interpret
+		  language, generate images, and more, with examples like Stable Diffusion for images and GPT-4 for language.
+		- **Large Language Models (LLM):** Used in GAI to generate text by predicting and translating content, LLMs are trained on
+		  transformer models and focus on language patterns and algorithms.
+		- **Natural Language Processing (NLP):** Enables systems
+		  to understand and interpret human language in written and verbal forms,
+		  involving natural language understanding (NLU) and generation (NLG).
+		- **Transformer Model:** A deep learning architecture that processes text and captures relationships between text elements,
+		  supporting LLMs and enabling tasks like language translation and data
+		  transformation.
+		- **Generative Pretrained Transformer (GPT):** Utilizes
+		  transformer models for generating human-like content, extensively used
+		  in applications like text summarization and chatbots, exemplified by
+		  ChatGPT.
+		  
+		  <!-- notionvc: 413d4277-dd01-4d13-8a5b-e0987a96141d -->
+	- ### Vocabulary set 2 summary
+	- **Responsible AI**: Emphasizes the importance of
+	  ethical, lawful, and transparent AI practices to ensure trust and
+	  confidence in AI systems. It involves setting principles and frameworks
+	  to govern AI's impact on humanity.
+	- **Labelled Data**: Refers to data tagged with
+	  informative labels, aiding machine learning models in understanding and
+	  learning from raw data. It requires human intervention for accurate
+	  labeling.
+	- **Supervised Learning**: A machine learning method using labeled datasets to predict outputs. The algorithm learns the
+	  relationship between input and output data, with corrections made for
+	  errors during training.
+	- **Unsupervised Learning**: Involves learning from
+	  unlabeled data, where the model autonomously identifies patterns and
+	  relationships within the data without predefined labels.
+	- **Semi-supervised Learning**: Combines supervised and
+	  unsupervised learning, using a small set of labeled data alongside a
+	  larger set of unlabeled data to improve model training efficiency.
+	- **Prompt Engineering**: Involves refining input prompts
+	  for large language models to optimize their output. It enhances AI
+	  performance by adjusting prompts to produce more relevant responses.
+	- **Prompt Chaining**: A technique for creating
+	  conversational interactions with language models by using a series of
+	  prompts, enhancing contextual awareness and user experience, often used
+	  in chatbots.
+	- **Retrieval Augmented Generation (RAG)**: A framework
+	  that supplements AI models with external factual data to generate
+	  accurate and up-to-date responses, enhancing the model's reliability.
+	- **Parameters**: Variables within a machine learning
+	  model that are adjusted during training to optimize performance and
+	  improve the model's ability to generalize data patterns.
+	- **Fine Tuning**: The process of adjusting a pre-trained
+	  model on specific tasks or datasets to enhance its performance, allowing it to adapt to new data and improve accuracy for targeted applications.
+	  
+	  <!-- notionvc: c9c53eed-11d2-489e-8ed9-881d18d85ec7 -->
