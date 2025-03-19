@@ -1,5 +1,5 @@
 - Day 1
-	-
+	- Collected Notes and agreed on materials
 - Day 2
   collapsed:: true
 	- # AWS Certified AI Practitioner (AIF-C01) Plan
@@ -278,4 +278,5 @@
 	  | Secure AI systems | IAM, AWS Key Management Service (KMS), Amazon Macie, AWS PrivateLink, Amazon S3, SageMaker Model Cards |  |
 	  | Compliance and governance | AWS Config, Amazon Inspector, AWS Audit Manager, AWS Artifact, AWS CloudTrail, AWS Trusted Advisor |  |
 	  | Data governance strategies | AWS CloudTrail, Amazon Macie, AWS Audit Manager, Amazon S3, Amazon RDS, Amazon Redshift, AWS Glue, Lake Formation |  |
--
+- Day 3
+	-
