@@ -1,4 +1,5 @@
 - Day 1
+  collapsed:: true
 	- Collected Notes and agreed on materials
 - Day 2
   collapsed:: true
@@ -279,6 +280,7 @@
 	  | Compliance and governance | AWS Config, Amazon Inspector, AWS Audit Manager, AWS Artifact, AWS CloudTrail, AWS Trusted Advisor |  |
 	  | Data governance strategies | AWS CloudTrail, Amazon Macie, AWS Audit Manager, Amazon S3, Amazon RDS, Amazon Redshift, AWS Glue, Lake Formation |  |
 - Day 3
+  collapsed:: true
 	- ### Vocabulary set 1 summary
 	  collapsed:: true
 		- **Artificial Intelligence (AI):** AI simulates human
