@@ -3,7 +3,7 @@
 	  
 	  [https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf?p=cert&c=ai&z=3](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf?p=cert&c=ai&z=3)
 	  
-	  ![image.png](AWS%20Certified%20AI%20Practitioner%20(AIF-C01)%20Plan%201b97f3feda45804a8fd0db2935807b95/image.png)
+	  ![image.png](../assets/image_1732076761152_0.png)
 	  
 	  Timelines: 
 	  
