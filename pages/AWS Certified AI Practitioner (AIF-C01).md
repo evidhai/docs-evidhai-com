@@ -3,7 +3,7 @@
 	  
 	  [https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf?p=cert&c=ai&z=3](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf?p=cert&c=ai&z=3)
 	  
-	  ![image.png](../assets/image_1732076761152_0.png)
+	  ![image.png](../assets/aif-domains.png)
 	  
 	  Timelines: 
 	  
