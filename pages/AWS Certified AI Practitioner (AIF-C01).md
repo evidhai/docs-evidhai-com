@@ -380,3 +380,25 @@
 		  influences how prompts are engineered for effective responses.
 		  
 		  <!-- notionvc: 12bad55a-4c14-4c38-8f4f-f16cc8f6aee0 -->
+- Day 4
+	- ### Ethics and Concern
+	- **Data Privacy Concerns**:
+		- Generative AI tools like ChatGPT can pose risks to company and user data, as seen in a breach in March 2023.
+		- Companies should read privacy statements, align their privacy
+		  policies with service providers, and implement additional security
+		  checks.
+		- Anonymizing user data before using third-party services is recommended to mitigate risks.
+	- **Generative AI Bias**:
+		- Generative AI can inherit biases from its training data, leading to stereotypes, such as gender biases in generated images.
+		- To combat bias, expand datasets, test for existing biases, and be transparent about biases when they cannot be removed.
+	- **IP and Copyright Issues**
+		- Using Generative AI to create content can lead to IP violations if copyrighted material is involved.
+		- In the U.S., works created with Generative AI are not eligible for copyright protection.
+		- Companies should be cautious about using Generative AI tools to avoid potential legal issues related to IP and copyright.
+		  
+		  Tools explored:
+		  
+		  [https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer](https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer)
+		  
+		  - DiffusionBee Tool
+	-
