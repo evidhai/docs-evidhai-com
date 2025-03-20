@@ -381,6 +381,7 @@
 		  
 		  <!-- notionvc: 12bad55a-4c14-4c38-8f4f-f16cc8f6aee0 -->
 - Day 4
+  collapsed:: true
 	- ### Ethics and Concern
 		- **Data Privacy Concerns**:
 			- Generative AI tools like ChatGPT can pose risks to company and user data, as seen in a breach in March 2023.
