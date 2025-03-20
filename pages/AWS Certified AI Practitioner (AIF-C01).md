@@ -398,6 +398,6 @@
 		  
 		  Tools explored:
 		  
-		  
+		  [Huggingface Bias Explorer](https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer) 
 		  DiffusionBee Tool
 	-
