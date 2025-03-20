@@ -398,7 +398,6 @@
 		  
 		  Tools explored:
 		  
-		  [https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer](https://huggingface.co/spaces/society-ethics/DiffusionBiasExplorer)
 		  
-		  - DiffusionBee Tool
+		  DiffusionBee Tool
 	-
