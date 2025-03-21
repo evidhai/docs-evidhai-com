@@ -509,4 +509,4 @@
 			    
 			    In Bedrock
 			    
-			    ![image.png](Day%205%201bd7f3feda4580d09b03dfa9da430ab5/image.png)
+			  ![image.png](../assets/image_1742582968658_0.png)
