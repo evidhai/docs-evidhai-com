@@ -403,4 +403,110 @@
 	-
 	- @@html: {{video https://youtu.be/odgLX52Ulyg}}@@
 - Day 5
-	-
+	- # Day 5
+	- Model access
+		- By default not all model are enabled to account ,we need to get them enabled under model access section in Bedrock
+	- Bedrock Playground
+		- Amazon Bedrock's Playgrounds allow users to experiment with different foundation models through a graphical interface, enabling them to
+		  determine the most suitable model for their needs.
+		- These playgrounds support text, chat, and image-based generative AI
+		  applications, offering flexibility in design and development.
+		- Users can manipulate prompts and inference parameters to influence
+		  model responses, aiding in aligning outputs with specific use cases.
+		- Parameters
+			- Randomness and diversity parameters include Temperature and Top P, which affect the focus and diversity of model outputs.
+			- Length parameters, such as Max completion length and Stop sequences,
+			  control the length and stopping points of generated responses.
+			- Repetition parameters, including Presence penalty, Count penalty,
+			  Frequency penalty, and Penalize special tokens, manage the repetition of tokens in outputs.
+			- Adjusting these parameters can significantly alter the completion results
+		- Model metrics, such as latency and cost, are available in the Chat
+		  playground to help users evaluate model performance and suitability for
+		  their use cases.
+		- Users can define specific metric criteria to assess if a model meets
+		  their requirements, with visual indicators highlighting any
+		  discrepancies.
+	- Selecting right Models
+	    
+	    Methods
+		- Evaluations can be conducted in three modes: Automatic, Human: Bring
+		  your own work team, and Human: AWS Managed work team, with human modes
+		  incorporating human judgment.
+		- Automatic evaluations involve an 8-step process: selecting a
+		  foundation model, task type, metrics, dataset, specifying S3 storage
+		  location, selecting IAM role, inference and scoring, and viewing
+		  results.
+		- Task types for automatic evaluations include general text generation, text summarization, question and answer, and text classification, with
+		  metrics like toxicity, accuracy, and robustness.
+		- Human evaluations allow for up to two models to be reviewed, with an
+		  additional 'Custom' task type for tailored evaluations, and involve
+		  setting up a work team, defining metrics, and providing instructions.
+		- Human: Bring your own work team evaluations involve selecting models, task types, metrics, dataset location, S3 storage, setting permissions, setting up a work team, providing instructions, submitting the job,
+		  completing workforce tasks, and viewing results.
+		- Human: AWS Managed work team evaluations require naming the
+		  evaluation, scheduling a consultation with AWS, liaising to finalize
+		  requirements, and creating the job, with AWS managing the workforce and
+		  criteria.
+	- Setting up AWS Bedrock API
+		- 3 ways:
+		    
+		    SDK
+		    
+		    CLI
+		    
+		    Sagemaker Notebook
+		- permissions to access API
+			- The AWS SDK supports multiple programming languages, including C++, Go,
+			  Java, JavaScript, .NET, Python (Boto3), and Ruby. Each language has its
+			  own way of interacting with the Bedrock APIs.
+			- To use the AWS CLI, users must download, install, and configure it with the necessary permissions to access Amazon Bedrock.
+			- When using an Amazon SageMaker notebook, the role associated with
+			  the notebook must have specific permissions to access Amazon Bedrock.
+			  This includes an inline policy allowing all Bedrock actions and a trust
+			  relationship policy allowing Bedrock and SageMaker services to assume
+			  the role.
+			- The trust relationship policy is resource-based, defining which
+			  entities can assume the role, granting full access to Amazon Bedrock as
+			  specified in the inline policy.
+			- With a SageMaker notebook, users can utilize the Python (Boto3) SDK to perform and invoke API operations.
+	- Evaluate Model performance. - Lab
+	    
+	    [https://aws.amazon.com/blogs/aws/amazon-bedrock-model-evaluation-is-now-generally-available/](https://aws.amazon.com/blogs/aws/amazon-bedrock-model-evaluation-is-now-generally-available/)
+	    
+	    Doc page: [https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation-jobs-management-create.html](https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation-jobs-management-create.html)
+		- Step References:
+			- Sample Dataset:
+			    
+			    ```jsx
+			    {"prompt":"The chemical symbol for gold is", "category":"Chemistry", "referenceResponse":"Au"}
+			    {"prompt":"The tallest mountain in the world is", "category":"Geography", "referenceResponse":"Mount Everest"}
+			    {"prompt":"The author of 'Great Expectations' is", "category":"Literature", "referenceResponse":"Charles Dickens"}
+			    ```
+			- Bucket CORS setting for dataset source
+			    
+			  
+			  ```[
+			    {
+			    "AllowedHeaders": [
+			    "*"
+			    ],
+			    "AllowedMethods": [
+			    "GET",
+			    "PUT",
+			    "POST",
+			    "DELETE"
+			    ],
+			    "AllowedOrigins": [
+			    "*"
+			    ],
+			    "ExposeHeaders": [
+			    "Access-Control-Allow-Origin"
+			    ]
+			    }
+			    ]
+			  ```
+			- Evaluation steps
+			    
+			    In Bedrock
+			    
+			    ![image.png](Day%205%201bd7f3feda4580d09b03dfa9da430ab5/image.png)
