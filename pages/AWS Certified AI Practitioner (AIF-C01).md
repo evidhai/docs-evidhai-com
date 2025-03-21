@@ -403,6 +403,7 @@
 	-
 	- @@html: {{video https://youtu.be/odgLX52Ulyg}}@@
 - Day 5
+  collapsed:: true
 	- # Day 5
 	- Model access
 		- By default not all model are enabled to account ,we need to get them enabled under model access section in Bedrock
