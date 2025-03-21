@@ -402,3 +402,5 @@
 			   DiffusionBee Tool
 	-
 	- @@html: {{video https://youtu.be/odgLX52Ulyg}}@@
+- Day 5
+	-
