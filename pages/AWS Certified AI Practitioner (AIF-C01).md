@@ -512,11 +512,8 @@
 			    
 			  ![image.png](../assets/image_1742582968658_0.png)
 - Day 6
-	- ###
-	- collapsed:: true
-	  
-	  Prompt Engineering Intro
-		- The video introduces the concept of prompt engineering, explaining its significance and impact on AI interaction.
+	- ### Prompt Engineering
+	- Prompt Engineering Intro
 		- Prompts are inputs given to generative AI systems to guide their output, with text-based prompts being the most common.
 		- Prompt engineering involves crafting prompts that consistently yield the desired output, combining creativity and an iterative refinement
 		  process.
