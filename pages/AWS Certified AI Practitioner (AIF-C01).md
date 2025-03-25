@@ -513,7 +513,9 @@
 			  ![image.png](../assets/image_1742582968658_0.png)
 - Day 6
 	- ###
-	- Prompt Engineering Intro
+	- collapsed:: true
+	  
+	  Prompt Engineering Intro
 		- The video introduces the concept of prompt engineering, explaining its significance and impact on AI interaction.
 		- Prompts are inputs given to generative AI systems to guide their output, with text-based prompts being the most common.
 		- Prompt engineering involves crafting prompts that consistently yield the desired output, combining creativity and an iterative refinement
@@ -526,25 +528,22 @@
 		  enhancing their capabilities through prompts.
 		- Effective prompt engineering is crucial for maximizing the value extracted from generative AI systems.
 		- The field is emerging, requiring experimentation, creativity, and patience, with significant rewards for those who master it.
-	- Prompt Anatomy
+	- collapsed:: true
+	  
+	  Prompt Anatomy
 		- Objective:
 		  
 		  Goal of the prompt. eg: Summarize the document
 		- **Context**: Additional information provided to help generate the desired response, though not always required.
 		- **Markers**: Used to indicate specific sections of the prompt, aiding the model in understanding its structure.
 	- Prompt creation process
-	  
-	  Two main factors:
-		- Objective. - Clearly define it
-		- Verification process - same as verifying the code is that achieves the objective
-		  
-		  Choose the right model for your use case
-		  
-		  Prompt experiments
-		  
-		  Experiment with prompt by varying parameters like temperature to understand the response
-		  
-		  Prompt Analysis
+		- Two main factors:
+			- Objective. - Clearly define it
+			- Verification process - same as verifying the code is that achieves the objective
+		- Choose the right model for your use case
+		- Prompt experiments
+		- Experiment with prompt by varying parameters like temperature to understand the response
+		- Prompt Analysis
 		  
 		  Try to generate same results with different prompts and see how the prompt influences the response
 		  
