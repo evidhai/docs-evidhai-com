@@ -511,3 +511,144 @@
 			    In Bedrock
 			    
 			  ![image.png](../assets/image_1742582968658_0.png)
+- Day 6
+	- ###
+	- Prompt Engineering Intro
+		- The video introduces the concept of prompt engineering, explaining its significance and impact on AI interaction.
+		- Prompts are inputs given to generative AI systems to guide their output, with text-based prompts being the most common.
+		- Prompt engineering involves crafting prompts that consistently yield the desired output, combining creativity and an iterative refinement
+		  process.
+		- The importance of prompt engineering lies in its ability to
+		  transform interactions with AI, enabling natural language interfaces
+		  over traditional user interfaces.
+		- Generative AI is integrated into various products, such as Adobe's
+		  Photoshop and Illustrator, GitHub's Copilot, and Salesforce's Einstein,
+		  enhancing their capabilities through prompts.
+		- Effective prompt engineering is crucial for maximizing the value extracted from generative AI systems.
+		- The field is emerging, requiring experimentation, creativity, and patience, with significant rewards for those who master it.
+	- Prompt Anatomy
+		- Objective:
+		  
+		  Goal of the prompt. eg: Summarize the document
+		- **Context**: Additional information provided to help generate the desired response, though not always required.
+		- **Markers**: Used to indicate specific sections of the prompt, aiding the model in understanding its structure.
+	- Prompt creation process
+	  
+	  Two main factors:
+		- Objective. - Clearly define it
+		- Verification process - same as verifying the code is that achieves the objective
+		  
+		  Choose the right model for your use case
+		  
+		  Prompt experiments
+		  
+		  Experiment with prompt by varying parameters like temperature to understand the response
+		  
+		  Prompt Analysis
+		  
+		  Try to generate same results with different prompts and see how the prompt influences the response
+		  
+		  Refinement
+		  
+		  Refine your prompt further by cuttingout unwanted words in the prompt
+		  
+		  Model Experiments
+		  
+		  Now experiment the same with different Models and see how consistency you get same results for same prompt
+		  
+		  Document
+		  
+		  Document the result and prompt on various models for future reference
+	- Standard Prompt Strategies
+		- Instruction Prompts
+			- eg: Translate text to language Tamil
+			  
+			  > 
+			  
+			  Instructions can be limited in response
+		- Question based Prompts
+			- You can get more options and conversational
+			- Question-based prompts can be categorized into open, closed, and leading questions,
+			  each serving different purposes and influencing the scope and direction
+			  of the response.
+			- Open questions allow for expansive answers, closed questions
+			  anticipate specific answers, and leading questions guide the model
+			  towards a particular response.
+		- Instructional prompts are explicit and useful for tasks requiring specific formatting, while question-based prompts allow for exploration and conversational interaction.
+	- Contextual Prompts
+		- Contextual prompts are divided into two sub-categories: role-playing and scenario-based prompts.
+		- Role-playing prompts engage the model in a specific role, such as a
+		  historical figure or professional, to generate content from different
+		  perspectives and simulate creative thinking.
+		- Scenario-based prompts set a specific situation, time, or place for
+		  the model to consider, allowing exploration of specific events or
+		  environments.
+		- Both types of prompts require a deep understanding of the topic to create believable and effective contexts.
+		- The complexity of the role or scenario should be carefully considered to avoid oversimplification or bias.
+		- Role-playing and scenario-based prompts can be used together for more effective results.
+		- The process of creating these prompts involves defining objectives,
+		  including rules for context, and iteratively crafting the prompt to
+		  achieve the desired response.
+	- Few Shot Prompts
+	  
+	  Few-shot learning provides context to models, enabling them to understand and perform tasks more effectively by recognizing patterns from given examples.
+	  
+	  zero-shot, one-shot, and few-shot prompts:
+		- Zero-shot prompts do not include examples and rely on the model's existing knowledge.
+		- One-shot prompts include a single example to guide the model.
+		- Few-shot prompts include multiple examples to provide a clearer understanding of the task.
+	- Chain of Thought Prompts
+		- Language models have limitations in performing complex reasoning tasks, such as
+		  arithmetic or common-sense reasoning, and chain-of-thought prompts aim
+		  to mitigate these limitations.
+		- An example problem involving counting apples is used to demonstrate
+		  the model's reasoning process. Initially, the model makes a mistake by
+		  misinterpreting the phrase "shared an apple" as two apples instead of
+		  one.
+		- In above case break the problem statement and do one action at a time
+		- while models are advancing, they can still provide incorrect answers confidently, so users should verify responses and use prompts to achieve desired outcomes.
+	- Evaluating Response Accuracy
+		- Generative AI models can provide inaccurate information confidently, highlighting the need for verification of responses.
+		- A real-world example is provided where a lawyer used ChatGPT to
+		  create a legal brief with fabricated cases, emphasizing the importance
+		  of verifying AI-generated information.
+		- To ensure accuracy, responses should be cross-referenced with
+		  multiple reliable sources, and discrepancies should be investigated.
+		- Prompts can impact response accuracy; leading, ambiguous, and biased prompts can lead to inaccuracies.
+		- Leading prompts guide responses towards specific outcomes, which can result in fabricated responses.
+		- Ambiguous prompts can be interpreted in multiple ways, leading to
+		  inaccurate responses, while specific prompts help guide models towards
+		  accurate answers.
+		- Biased prompts and models can produce inaccurate responses by reflecting biases present in training data.
+		- A prompt review process involving diverse perspectives is recommended to identify and avoid biases.
+	- Response Formatting
+	  
+	  Types of response
+		- Unstructured data is raw model output, ideal for plaintext consumption or intermediate steps like text-to-speech.
+		- Loosely structured data, such as Markdown, enhances readability with minimal syntax for formatting text.
+		- Highly structured data formats like JSON, YAML, XML, and CSV are
+		  used for software consumption, requiring strict adherence to rules.
+		  
+		  > 
+		  
+		  Producing highly structured formats can be challenging due to non-deterministic model behavior, complexity, token consumption, and cost.
+		- Lower temperature settings are recommended for predictable formatting, while higher temperatures are for creative responses.
+		- Custom formats can be beneficial for specific use cases, simplifying the process and reducing effort compared to standard formats.
+		- Consider using `retry` mechanism
+	- Response Qualities
+		- Language models can produce grammatically correct responses due to their
+		  training on diverse data, which can be used for proofreading and editing human-written content.
+		- Style and tone are context-dependent, with formal styles suited for
+		  legal briefs and casual styles for blog posts. Prompts can adjust these
+		  qualities by specifying terms like formal, casual, or friendly.
+		- Emotion and sentiment in responses are more subjective and complex
+		  to control. Prompts should include desired emotions or sentiments,
+		  considering the emotional weight of words and punctuation.
+		- Emotion and sentiment analysis requires understanding the model's
+		  capabilities and may need pre-processing to avoid skewed results,
+		  especially in longer content.
+		- It's important to verify the desired qualities with human review,
+		  especially for significant use cases, to ensure accuracy and
+		  appropriateness.
+		  
+		  <!-- notionvc: 789c9882-2ab6-4994-a5e1-80b9173db6b9 -->
