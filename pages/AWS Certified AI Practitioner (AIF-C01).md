@@ -537,35 +537,31 @@
 		- **Context**: Additional information provided to help generate the desired response, though not always required.
 		- **Markers**: Used to indicate specific sections of the prompt, aiding the model in understanding its structure.
 	- Prompt creation process
+	  collapsed:: true
 		- Two main factors:
 			- Objective. - Clearly define it
 			- Verification process - same as verifying the code is that achieves the objective
 		- Choose the right model for your use case
 		- Prompt experiments
-		- Experiment with prompt by varying parameters like temperature to understand the response
+			- Experiment with prompt by varying parameters like temperature to understand the response
 		- Prompt Analysis
-		  
-		  Try to generate same results with different prompts and see how the prompt influences the response
-		  
-		  Refinement
-		  
-		  Refine your prompt further by cuttingout unwanted words in the prompt
-		  
-		  Model Experiments
-		  
-		  Now experiment the same with different Models and see how consistency you get same results for same prompt
-		  
-		  Document
-		  
-		  Document the result and prompt on various models for future reference
+			- Try to generate same results with different prompts and see how the prompt influences the response
+		- Refinement
+			- Refine your prompt further by cuttingout unwanted words in the prompt
+		- Model Experiments
+			- Now experiment the same with different Models and see how consistency you get same results for same prompt
+		- Document
+			- Document the result and prompt on various models for future reference
 	- Standard Prompt Strategies
-		- Instruction Prompts
+		- collapsed:: true
+		  
+		  Instruction Prompts
 			- eg: Translate text to language Tamil
 			  
-			  > 
-			  
-			  Instructions can be limited in response
-		- Question based Prompts
+			  > Instructions can be limited in response
+		- collapsed:: true
+		  
+		  Question based Prompts
 			- You can get more options and conversational
 			- Question-based prompts can be categorized into open, closed, and leading questions,
 			  each serving different purposes and influencing the scope and direction
@@ -628,9 +624,7 @@
 		- Highly structured data formats like JSON, YAML, XML, and CSV are
 		  used for software consumption, requiring strict adherence to rules.
 		  
-		  > 
-		  
-		  Producing highly structured formats can be challenging due to non-deterministic model behavior, complexity, token consumption, and cost.
+		  >  Producing highly structured formats can be challenging due to non-deterministic model behavior, complexity, token consumption, and cost.
 		- Lower temperature settings are recommended for predictable formatting, while higher temperatures are for creative responses.
 		- Custom formats can be beneficial for specific use cases, simplifying the process and reducing effort compared to standard formats.
 		- Consider using `retry` mechanism
