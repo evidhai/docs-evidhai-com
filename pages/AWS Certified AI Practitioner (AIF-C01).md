@@ -644,3 +644,10 @@
 		  
 		  <!-- notionvc: 789c9882-2ab6-4994-a5e1-80b9173db6b9 -->
 - Day 7
+  collapsed:: true
+	- Bedrock Playground : Generate Response from Interface: Lab
+	  
+	  [https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html](https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html)
+	  
+	  <!-- notionvc: 4519b9ca-d515-4dfa-8a67-6bb7887b8464 -->
+- Day 8
