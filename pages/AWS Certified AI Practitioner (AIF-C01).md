@@ -511,7 +511,8 @@
 			    In Bedrock
 			    
 			  ![image.png](../assets/image_1742582968658_0.png)
-- Day 6
+- Day 6 
+  collapsed:: true
 	- ### Prompt Engineering
 	- Prompt Engineering Intro
 		- Prompts are inputs given to generative AI systems to guide their output, with text-based prompts being the most common.
@@ -642,3 +643,4 @@
 		  appropriateness.
 		  
 		  <!-- notionvc: 789c9882-2ab6-4994-a5e1-80b9173db6b9 -->
+- Day 7
