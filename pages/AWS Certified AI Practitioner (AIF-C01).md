@@ -651,3 +651,33 @@
 	  
 	  <!-- notionvc: 4519b9ca-d515-4dfa-8a67-6bb7887b8464 -->
 - Day 8
+	- Custom Models in Bedrock
+	  collapsed:: true
+		- Provisioned Throughput is required for using custom models
+			- Specifies how much throughput your model will require and for how long
+			- Provisioned throughput in Amazon Bedrock requires a long-term commitment and is ideal for consistent performance needs.
+			- Provisioned throughput can be purchased through the Bedrock console under 'assessment and deployment.'
+			- Users must specify the model, commitment duration (no commitment,
+			  one month, or six months), and the number of model units (MUs) needed.
+			- AWS does not specify the processing power of an MU; users should contact their account manager for details.
+			- By default, accounts have two MUs for models with no commitments, but more can be requested for longer commitments.
+			- Once purchased, the provisioned throughput settings cannot be changed.
+			- The provisioned throughput can be used in the Bedrock playground for testing and deployed via the Bedrock API for application use.
+		- Bedrock makes the clone of Foundation model and then customise it on top of it
+		- All customised models are placed within your VPC
+		- Once model is customised it can be accessed via Bedrock API
+		- Finetuning and more
+			- Fine-tuning is used to optimize a model for specific tasks using a small, labeled
+			  dataset with examples of prompts and completions, formatted in JSONL.
+			- Continued pre-training is suitable for enhancing a model's
+			  performance in a specific domain using a large, unlabelled dataset, also in JSONL format.
+			- To create a customization job, navigate to the Bedrock console,
+			  select a base model from providers like Amazon, Cohere, or Meta, and
+			  configure the job by naming it and specifying the dataset location.
+			- Upload the dataset to an S3 bucket, adjust hyperparameters, and select a service role with S3 access for data permissions.
+			- Once the job is created and run, the customized model can be tested
+			  in a playground or used for inference via API, provided there is
+			  sufficient provision throughput.
+			  
+			  <!-- notionvc: 00d61353-8d2d-4e74-a6fb-e80e5318ff2f -->
+	- Lab [single prompt api via lambda](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html)
