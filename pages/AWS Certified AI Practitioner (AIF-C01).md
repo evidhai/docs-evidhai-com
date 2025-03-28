@@ -651,6 +651,7 @@
 	  
 	  <!-- notionvc: 4519b9ca-d515-4dfa-8a67-6bb7887b8464 -->
 - Day 8
+  collapsed:: true
 	- Custom Models in Bedrock
 	  collapsed:: true
 		- Provisioned Throughput is required for using custom models
@@ -681,3 +682,16 @@
 			  
 			  <!-- notionvc: 00d61353-8d2d-4e74-a6fb-e80e5318ff2f -->
 	- Lab [single prompt api via lambda](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-invoke.html)
+- Day 9
+	- IAM
+		- Evaluation order
+		  
+		  SCP
+		  
+		  Resource based policies
+		  
+		  Permission boundaries
+		  
+		  Identity based policies
+		  
+		  <!-- notionvc: 97eafc7a-3baf-436f-ab18-cc1ccb8ae91b -->
