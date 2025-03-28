@@ -685,13 +685,9 @@
 - Day 9
 	- IAM
 		- Evaluation order
-		  
-		  SCP
-		  
-		  Resource based policies
-		  
-		  Permission boundaries
-		  
-		  Identity based policies
-		  
-		  <!-- notionvc: 97eafc7a-3baf-436f-ab18-cc1ccb8ae91b -->
+			- SCP
+			- Resource based policies
+			- Permission boundaries
+			- Identity based policies
+			  
+			  <!-- notionvc: 97eafc7a-3baf-436f-ab18-cc1ccb8ae91b -->
