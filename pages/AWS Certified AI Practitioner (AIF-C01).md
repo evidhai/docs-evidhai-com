@@ -692,73 +692,75 @@
 			- Identity based policies
 			  
 			  <!-- notionvc: 97eafc7a-3baf-436f-ab18-cc1ccb8ae91b -->
-- Day 10 -
+- Day 10 - 
+  collapsed:: true
 	- ### Bedrock Knowledgebase
-	-
-	- Knowledge base intro
-		- Knowledge bases allow applications to use both foundation models and external data to provide more reliable and current information.
-		- two main stages of knowledge base operations: pre-processing and runtime execution.
-		- During pre-processing, data is divided into smaller segments,
-		  transformed into embeddings, and stored in a vector index, which helps
-		  in assessing semantic similarities between queries and data.
-		- In runtime execution, user queries are translated into vectors,
-		  matched against the vector index to find semantically similar document
-		  segments, and used to generate a tailored response with additional
-		  context.
-	- Building a knowledge base
-		- 4 step process
-			- **Step 1: Provide Knowledge Base Details**
-				- Assign a name and description to differentiate between multiple knowledge bases.
-				- Select an IAM role with permissions for accessing necessary services like Amazon Bedrock, S3, OpenSearch, or Aurora.
-				- Optionally, use KMS for encryption and add metadata tags for management.
-			- **Step 2: Configure Data Source**
-				- Name the data source and provide its URI, which must be stored on Amazon S3.
-				- Supported formats include .txt, .md, .html, .doc/.docx, .csv, .xls/.xlsx, and .pdf.
-				- Configure encryption settings and choose a chunking strategy for data segmentation.
-				- Set a data retention policy and add up to five data sources.
-			- **Step 3: Select Embeddings Model and Configure Vector Store**
-				- Choose an embedding model, noting that costs vary by model.
-				- Create a vector store, either by quick creation (for development) or selecting an existing one.
-				- Options include Amazon OpenSearch Serverless, Aurora, Pinecone, and Redis Enterprise Cloud.
-			- **Step 4: Review and Create**
-				- Verify all configurations before creating the Knowledge Base.
-				- Perform a sync to ingest and index data sources, with incremental syncs needed for any data source changes.
-	- Interacting with knowledge baseChunk
-		- RetrieveAndGenerate API, which allows querying the knowledge base and generating responses based on relevant sources.
-		- The Retrieve API is highlighted for directly accessing and retrieving information from the knowledge base.
-		- Amazon Bedrock Agents are mentioned as tools to help users automate
-		  tasks and interact with the knowledge base through API calls.
-		- Additional resources and detailed information about Amazon Bedrock API actions are available through provided URLs.
-	- Types of Chunking mechanism
-		- **Default chunking** will segment the data into a slice of approximately 300 tokens in
-		  size. These tokens can be a whole word, just the beginning or the word,
-		  the end, spaces, single characters, and anything in between.
-		- **Fixed size chunking** will chunk your data into segments of approximately the same size, with the smallest chunk being 20, and the maximum allowed of 8192. However,
-		  this will depend on the model being used.
-		- **No chunking** will simply use each file defined as a single chunk.
-	- Amazon Bedrock Agents
-		- Amazon Bedrock Agents function as automated helpers in AI
-		  applications, streamlining development and enhancing user interactions.
-		- They facilitate integration between AI components, linking
-		  foundation models with data sources and managing user engagement and API requests.
-		- Agents help reduce development time and costs by allowing teams to focus on business objectives rather than coding tasks.
-		- They enhance customer experience through automation, such as
-		  executing tasks like booking reservations while interacting with users
-		  in natural language.
-		- Managed by Amazon Bedrock, Agents eliminate the need for
-		  infrastructure management, handling tasks like encryption and
-		  permissions.
-		- Agents can converse with users, complete tasks, break down tasks,
-		  make API calls, integrate with knowledge bases, and manage source
-		  attribution.
-		- The Build-time Execution phase involves building and configuring the Agent, associating it with a foundation model, and setting instructions for tasks.
-		- Optional components like Action Groups and Knowledge Bases can be added for advanced orchestration.
-		- Prompt Templates are used to create prompts for automated orchestration, allowing customization of prompts and actions.
-		- Run-time Execution involves preprocessing user requests,
-		  orchestrating actions, and generating responses through a sequence of
-		  phases.
-		- Post-processing, if enabled, allows the Agent to generate a final response to the user.
-		  
-		  [https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html)
-		  
-		  <!-- notionvc: 6b89ff0e-8837-4122-88e9-613ce4b7ae70 -->
+	  collapsed:: true
+		- Knowledge base intro
+		  collapsed:: true
+			- Knowledge bases allow applications to use both foundation models and external data to provide more reliable and current information.
+			- two main stages of knowledge base operations: pre-processing and runtime execution.
+			- During pre-processing, data is divided into smaller segments,
+			  transformed into embeddings, and stored in a vector index, which helps
+			  in assessing semantic similarities between queries and data.
+			- In runtime execution, user queries are translated into vectors,
+			  matched against the vector index to find semantically similar document
+			  segments, and used to generate a tailored response with additional
+			  context.
+		- Building a knowledge base
+			- 4 step process
+				- **Step 1: Provide Knowledge Base Details**
+					- Assign a name and description to differentiate between multiple knowledge bases.
+					- Select an IAM role with permissions for accessing necessary services like Amazon Bedrock, S3, OpenSearch, or Aurora.
+					- Optionally, use KMS for encryption and add metadata tags for management.
+				- **Step 2: Configure Data Source**
+					- Name the data source and provide its URI, which must be stored on Amazon S3.
+					- Supported formats include .txt, .md, .html, .doc/.docx, .csv, .xls/.xlsx, and .pdf.
+					- Configure encryption settings and choose a chunking strategy for data segmentation.
+					- Set a data retention policy and add up to five data sources.
+				- **Step 3: Select Embeddings Model and Configure Vector Store**
+					- Choose an embedding model, noting that costs vary by model.
+					- Create a vector store, either by quick creation (for development) or selecting an existing one.
+					- Options include Amazon OpenSearch Serverless, Aurora, Pinecone, and Redis Enterprise Cloud.
+				- **Step 4: Review and Create**
+					- Verify all configurations before creating the Knowledge Base.
+					- Perform a sync to ingest and index data sources, with incremental syncs needed for any data source changes.
+		- Interacting with knowledge baseChunk
+			- RetrieveAndGenerate API, which allows querying the knowledge base and generating responses based on relevant sources.
+			- The Retrieve API is highlighted for directly accessing and retrieving information from the knowledge base.
+			- Amazon Bedrock Agents are mentioned as tools to help users automate
+			  tasks and interact with the knowledge base through API calls.
+			- Additional resources and detailed information about Amazon Bedrock API actions are available through provided URLs.
+		- Types of Chunking mechanism
+			- **Default chunking** will segment the data into a slice of approximately 300 tokens in
+			  size. These tokens can be a whole word, just the beginning or the word,
+			  the end, spaces, single characters, and anything in between.
+			- **Fixed size chunking** will chunk your data into segments of approximately the same size, with the smallest chunk being 20, and the maximum allowed of 8192. However,
+			  this will depend on the model being used.
+			- **No chunking** will simply use each file defined as a single chunk.
+		- Amazon Bedrock Agents
+			- Amazon Bedrock Agents function as automated helpers in AI
+			  applications, streamlining development and enhancing user interactions.
+			- They facilitate integration between AI components, linking
+			  foundation models with data sources and managing user engagement and API requests.
+			- Agents help reduce development time and costs by allowing teams to focus on business objectives rather than coding tasks.
+			- They enhance customer experience through automation, such as
+			  executing tasks like booking reservations while interacting with users
+			  in natural language.
+			- Managed by Amazon Bedrock, Agents eliminate the need for
+			  infrastructure management, handling tasks like encryption and
+			  permissions.
+			- Agents can converse with users, complete tasks, break down tasks,
+			  make API calls, integrate with knowledge bases, and manage source
+			  attribution.
+			- The Build-time Execution phase involves building and configuring the Agent, associating it with a foundation model, and setting instructions for tasks.
+			- Optional components like Action Groups and Knowledge Bases can be added for advanced orchestration.
+			- Prompt Templates are used to create prompts for automated orchestration, allowing customization of prompts and actions.
+			- Run-time Execution involves preprocessing user requests,
+			  orchestrating actions, and generating responses through a sequence of
+			  phases.
+			- Post-processing, if enabled, allows the Agent to generate a final response to the user.
+			  
+			  [https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html)
+			  
+			  <!-- notionvc: 6b89ff0e-8837-4122-88e9-613ce4b7ae70 -->
