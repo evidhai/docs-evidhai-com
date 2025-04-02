@@ -792,7 +792,7 @@
 		  training data and knowledge.
 		  
 		  RAG goes a step beyond prompt engineering as it augments the prompt with relevant retrieved data as additional context.
-	- ### Processes
+	- ### RAG Processes
 	  collapsed:: true
 		- At a high level, Retrieval-Augmented Generation involves the following processes:
 		- Retrieving information from an external source and ranking the information based on relevance
