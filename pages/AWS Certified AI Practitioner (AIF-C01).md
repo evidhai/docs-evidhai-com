@@ -692,7 +692,7 @@
 			- Identity based policies
 			  
 			  <!-- notionvc: 97eafc7a-3baf-436f-ab18-cc1ccb8ae91b -->
-- Day 10 - 
+- Day 10
   collapsed:: true
 	- ### Bedrock Knowledgebase
 	  collapsed:: true
@@ -764,3 +764,5 @@
 			  [https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html)
 			  
 			  <!-- notionvc: 6b89ff0e-8837-4122-88e9-613ce4b7ae70 -->
+- Day 11
+	-
