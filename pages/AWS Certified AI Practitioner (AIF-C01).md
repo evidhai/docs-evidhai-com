@@ -766,68 +766,71 @@
 			  <!-- notionvc: 6b89ff0e-8837-4122-88e9-613ce4b7ae70 -->
 - Day 11
 	- Aurora RDS as knowledge base to Bedrock
+	  collapsed:: true
 		- [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.VectorDB.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.VectorDB.html)
 		  
 		  [https://youtu.be/MpmV-MehtWs?si=FoIgGmS5j9xZEYAJ](https://youtu.be/MpmV-MehtWs?si=FoIgGmS5j9xZEYAJ)
-	- **Enhancing Generative AI Models With Retrieval-Augmented Generation (RAG)**
+	- collapsed:: true
+	  
+	  **Enhancing Generative AI Models With Retrieval-Augmented Generation (RAG)**
 		- RAG vs Finetuning vs Prompt Engineering
-	- ### RAG vs. Fine-tuning vs. Prompt engineering
-	  
-	  Fine-tuning a model involves training the model on a specific dataset to improve
-	  its performance on a particular task. This process involves adjusting
-	  LLM parameters using task-specific data.
-	  
-	  RAG, on the other hand, focuses on enhancing the quality of the model's responses by
-	  incorporating external information. These two approaches occur at
-	  different stages of the model's lifecycle; fine-tuning happens during
-	  training, while RAG happens during generation.
-	  
-	  Prompt engineering is the process of refining a model's input to improve the quality of its
-	  output. This process ends with a well-crafted prompt that can impact
-	  simple tasks such as text translation, summarization, and keyword
-	  extraction. However, the response is still dependent on the model's
-	  training data and knowledge.
-	  
-	  RAG goes a step beyond prompt engineering as it augments the prompt with relevant retrieved data as additional context.
+		- ### RAG vs. Fine-tuning vs. Prompt engineering
+		  
+		  Fine-tuning a model involves training the model on a specific dataset to improve
+		  its performance on a particular task. This process involves adjusting
+		  LLM parameters using task-specific data.
+		  
+		  RAG, on the other hand, focuses on enhancing the quality of the model's responses by
+		  incorporating external information. These two approaches occur at
+		  different stages of the model's lifecycle; fine-tuning happens during
+		  training, while RAG happens during generation.
+		  
+		  Prompt engineering is the process of refining a model's input to improve the quality of its
+		  output. This process ends with a well-crafted prompt that can impact
+		  simple tasks such as text translation, summarization, and keyword
+		  extraction. However, the response is still dependent on the model's
+		  training data and knowledge.
+		  
+		  RAG goes a step beyond prompt engineering as it augments the prompt with relevant retrieved data as additional context.
 	- ### Processes
-	  
-	  At a high level, Retrieval-Augmented Generation involves the following processes:
+	  collapsed:: true
+		- At a high level, Retrieval-Augmented Generation involves the following processes:
 		- Retrieving information from an external source and ranking the information based on relevance
 		- Augmenting an LLM prompt to include the top-ranked data as additional context for the LLM
 		- Generating the response using the augmented prompt
-	- ### Sourcing and indexing external data
-	  
-	  Before the RAG process begins, external data must be sourced and indexed. This
-	  involves collecting relevant data from authoritative sources and
-	  organizing it in a way that makes it easy to retrieve.
-	  
-	  The most common approach is to use vector indexing, where data is organized based
-	  on numerical vectors that represent keywords or phrases. This allows
-	  the retrieval system to capture semantic relationships between words and
-	  phrases.
-	  
-	  Another word for this process is "embedding". In generative AI, embedding is the process of converting words, images, or videos into numerical vectors. The terms "embeddings" and "vectors" are
-	  often used interchangeably in the context of RAG and generative AI.
-	  
-	  After the external data has been embedded, it can be organized and stored in a vector store or database for quick retrieval.
-	- ### Retrieval
-	  
-	  A relevancy search is performed on the embeddings to retrieve the most
-	  relevant data based on a user query. The user query is embedded using
-	  the same process as the external data. Once the query has been embedded,
-	  it is compared to the indexed external data embeddings to find the most
-	  relevant information.
-	  
-	  This process returns the top-ranked data based on the similarity between the query and the external data.
-	- ### Augmentation
-	  
-	  The original user query is combined with the top-ranked data to create an
-	  augmented prompt. Prompt engineering techniques can be used to refine
-	  the augmented prompt and ensure that it is compatible with the LLM.
-	- ### Generation
-	  
-	  The augmented prompt is fed into the LLM to generate a more accurate and relevant response.
-	  
-	  Lab : [https://github.com/aws-samples/amazon-bedrock-rag-workshop/tree/main](https://github.com/aws-samples/amazon-bedrock-rag-workshop/tree/main)
-	  
-	  <!-- notionvc: b65536cb-79ac-4a8c-8a51-9a09c9f2cf58 -->
+		- ### Sourcing and indexing external data
+		  
+		  Before the RAG process begins, external data must be sourced and indexed. This
+		  involves collecting relevant data from authoritative sources and
+		  organizing it in a way that makes it easy to retrieve.
+		  
+		  The most common approach is to use vector indexing, where data is organized based
+		  on numerical vectors that represent keywords or phrases. This allows
+		  the retrieval system to capture semantic relationships between words and
+		  phrases.
+		  
+		  Another word for this process is "embedding". In generative AI, embedding is the process of converting words, images, or videos into numerical vectors. The terms "embeddings" and "vectors" are
+		  often used interchangeably in the context of RAG and generative AI.
+		  
+		  After the external data has been embedded, it can be organized and stored in a vector store or database for quick retrieval.
+		- ### Retrieval
+		  
+		  A relevancy search is performed on the embeddings to retrieve the most
+		  relevant data based on a user query. The user query is embedded using
+		  the same process as the external data. Once the query has been embedded,
+		  it is compared to the indexed external data embeddings to find the most
+		  relevant information.
+		  
+		  This process returns the top-ranked data based on the similarity between the query and the external data.
+		- ### Augmentation
+		  
+		  The original user query is combined with the top-ranked data to create an
+		  augmented prompt. Prompt engineering techniques can be used to refine
+		  the augmented prompt and ensure that it is compatible with the LLM.
+		- ### Generation
+		  
+		  The augmented prompt is fed into the LLM to generate a more accurate and relevant response.
+		  
+		  Lab : [https://github.com/aws-samples/amazon-bedrock-rag-workshop/tree/main](https://github.com/aws-samples/amazon-bedrock-rag-workshop/tree/main)
+		  
+		  <!-- notionvc: b65536cb-79ac-4a8c-8a51-9a09c9f2cf58 -->
