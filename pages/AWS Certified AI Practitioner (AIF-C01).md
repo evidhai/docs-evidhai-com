@@ -902,3 +902,6 @@
 			  
 			  <!-- notionvc: 7596fa90-743a-4f9f-baea-5211a7ec8100 -->
 - Day 13
+	- Lab: Guardrail in Bedrock
+		- https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-create.html
+	-
