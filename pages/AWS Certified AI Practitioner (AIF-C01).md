@@ -765,6 +765,7 @@
 			  
 			  <!-- notionvc: 6b89ff0e-8837-4122-88e9-613ce4b7ae70 -->
 - Day 11
+  collapsed:: true
 	- Aurora RDS as knowledge base to Bedrock
 	  collapsed:: true
 		- [https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.VectorDB.html](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.VectorDB.html)
@@ -834,3 +835,40 @@
 		  Lab : [https://github.com/aws-samples/amazon-bedrock-rag-workshop/tree/main](https://github.com/aws-samples/amazon-bedrock-rag-workshop/tree/main)
 		  
 		  <!-- notionvc: b65536cb-79ac-4a8c-8a51-9a09c9f2cf58 -->
+- Day 12
+	- ### Guidelines of responsible AI
+	  collapsed:: true
+		- First four dimension of Responsible AI
+		  collapsed:: true
+			- **Fairness**: AI systems should treat all features and groups equitably, avoiding bias that can occur in training data or during deployment.
+			- **Explainability**: AI outputs should be
+			  understandable, allowing users to rationalize predictions. Tools like
+			  SHAP can help identify influential features, and simpler models can
+			  enhance interpretability.
+			- **Transparency**: AI systems should be well-documented, providing visibility into their design, training, and deployment
+			  processes. This ensures ethical disclosure to stakeholders.
+			- **Controllability**: Humans should maintain control
+			  over AI systems, with mechanisms for feedback and intervention to
+			  prevent AI from deviating or misbehaving.
+		- Last four dimension of ResponsibleAI
+		  collapsed:: true
+			- Veracity and robustness focus on ensuring data accuracy and model reliability, even under attacks or disturbances.
+			- Governance involves compliance with policies, procedures, and
+			  regulations, including internal ethics and external laws like GDPR.
+			- Safety aims to prevent harm to users by implementing fail-safes and risk assessments in AI systems.
+			- Privacy and security protect AI systems from breaches and ensure data is anonymized and safely collected.
+		- Importance of datasets
+		  collapsed:: true
+			- The data used in AI systems is crucial for creating a safe and responsible AI environment, impacting performance and fairness.
+			- Key characteristics of ethical AI datasets include inclusivity, diversity, balance, and curation.
+			- Inclusivity ensures datasets represent a variety of populations and
+			  perspectives, preventing marginalization and under-representation.
+			- Diversity involves having data from various demographics, such as age, ethnicity, gender, and geography, to avoid biased models.
+			- A balanced dataset ensures equal representation of all groups, preventing bias towards majority populations.
+			- Curated datasets come from reputable sources, are well-documented,
+			  and free from duplicates and noise, ensuring data quality and
+			  reliability.
+			- Overall, datasets should be explainable, curated, balanced, diverse, and inclusive to ensure ethical AI development.
+			  
+			  <!-- notionvc: dab6be9c-e544-4e3a-9916-6c72e0775e58 -->
+	-
