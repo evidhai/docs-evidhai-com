@@ -836,6 +836,7 @@
 		  
 		  <!-- notionvc: b65536cb-79ac-4a8c-8a51-9a09c9f2cf58 -->
 - Day 12
+  collapsed:: true
 	- ### Guidelines of responsible AI
 	  collapsed:: true
 		- First four dimension of Responsible AI
@@ -871,4 +872,33 @@
 			- Overall, datasets should be explainable, curated, balanced, diverse, and inclusive to ensure ethical AI development.
 			  
 			  <!-- notionvc: dab6be9c-e544-4e3a-9916-6c72e0775e58 -->
-	-
+	- ### Bedrock Security and Privacy
+	  collapsed:: true
+		- Intro
+		  collapsed:: true
+			- Customer data in Bedrock is encrypted both in transit and at rest, using TLS and AWS Key Management Service (KMS) for managing encryption keys.
+			- Bedrock ensures that customer data is not used to train models and is not stored in service logs.
+			- When fine-tuning models, Bedrock creates a unique copy of the model
+			  for private training with customer data, allowing full control over data sharing.
+			- AWS PrivateLink can be used to ensure secure traffic between a VPC and Amazon Bedrock, avoiding the public internet.
+		- Auditing at Bedrock
+			- Auditing is supported through AWS CloudTrail for tracking user activity and
+			  Amazon CloudWatch for monitoring metrics and logging model invocations.
+			- Data sovereignty is maintained by storing Bedrock data in the AWS region of use.
+			- Amazon Bedrock complies with various standards, including ISO, SOC, CSA STAR Level 2, HIPAA, and GDPR.
+			- AWS Artifact provides more information on compliance standards.
+		- Guardrails at Bedrock
+			- Amazon Bedrock includes automated mechanisms to detect and prevent misuse, but Guardrails provide enhanced security.
+			- Guardrails offer granular controls for administrators to filter both user inputs and model outputs, ensuring interactions remain
+			  appropriate.
+			- Four categories of policies can be defined:
+				- Denied topics to avoid certain subjects.
+				- Content filters to set thresholds for harmful content.
+				- PII redaction to protect user privacy by removing personally identifiable information.
+				- Word filters to block specific words or phrases.
+			- Guardrails provide an additional layer of protection beyond the
+			  built-in safeguards of foundation models and can be consistently applied across applications.
+			- They can also be deployed with Amazon Bedrock Agents, which assist employees with tasks like querying internal databases.
+			  
+			  <!-- notionvc: 7596fa90-743a-4f9f-baea-5211a7ec8100 -->
+- Day 13
