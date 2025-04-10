@@ -907,3 +907,120 @@
 		- https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-create.html
 	-
 - Day 14
+	- Sagemaker and ML workflow
+		- Amazon SageMaker is a fully managed service for building, training, and
+		  deploying machine learning models, catering to data scientists, machine
+		  learning engineers, and developers.
+		- It offers various environments like SageMaker Studio, Studio
+		  Classic, Studio Lab, and IDE options such as Code Editor and Notebook
+		  Instances, which support languages like R and Python and include
+		  pre-installed libraries like TensorFlow, PyTorch, and Scikit-learn.
+		- The machine learning workflow in SageMaker involves four main steps: data preparation, model building, model training, and model deployment.
+		- Data preparation is crucial and often the most time-consuming step, involving data collection, cleaning, and transformation.
+		- Model building follows data preparation, where SageMaker provides
+		  frameworks and pre-trained models to assist in selecting the right
+		  model.
+		- Model training involves setting up training runs, evaluation
+		  conditions, and hyperparameter tuning to optimize model performance.
+		- After training, the model is deployed into a production environment, where continuous monitoring is necessary to manage performance changes
+		  and hardware scaling.
+	- Preparing your data for sagemaker
+		- The quality of data is crucial when building and training machine
+		  learning models, emphasizing the importance of clean and well-structured data.
+		- Initial data preparation involves cleaning up data by removing
+		  duplicates, handling null or missing values, and performing necessary
+		  transformations like encoding and normalizing data.
+		- Depending on dataset size, sampling or augmenting data might be necessary to balance efficiency, cost, and avoid oversampling.
+		- Amazon SageMaker offers tools like Data Wrangler and Ground Truth to simplify data preparation.
+		- Data Wrangler provides a visual interface for preparing data with
+		  minimal coding, allowing for data transformations and creating
+		  repeatable workflows.
+		- Ground Truth assists in large-scale data labeling, offering semi-automated solutions involving human and machine collaboration.
+		- Additional SageMaker features include Processing for distributed
+		  data jobs, Feature Store for managing machine learning features, and
+		  Clarify for detecting potential bias in models.
+		  
+		  >
+	- Wrangler for data visualisation
+	  
+	  > 
+	  
+	  Ground truth to create labelling jobs
+	- Sagemaker Notebooks
+		- SageMaker Notebook Instances are managed Jupyter Notebooks that facilitate data
+		  exploration, preprocessing, feature engineering, and model development
+		  using frameworks like TensorFlow, PyTorch, and Scikit-learn.
+		- These instances are pre-configured with necessary libraries and tools, eliminating the need to manage infrastructure.
+		- Users can choose different instance types, with larger ones offering faster data processing but at a higher cost.
+		- The setup includes specifying an IEM role, optional KMS key for encryption, and associating with a Git repository.
+		- Once provisioned, users can access Jupyter or Jupyter Lab, which
+		  offers numerous example notebooks for various tasks, including Amazon
+		  algorithms and SageMaker processing.
+		- Example notebooks come with annotations, sample data, and code, aiding in model building without starting from scratch.
+		- Users can perform data labeling directly in SageMaker Notebooks
+		  using Python, bypassing tools like Data Wrangler or Ground Truth.
+		- SageMaker Autopilot automates the ML process by selecting optimal
+		  algorithms, while SageMaker JumpStart provides pre-trained models and
+		  templates for customization.
+	- Training ML model with sagemaker
+		- Begin training and tuning your model after building it. For smaller
+		  datasets, training can be done directly in a Notebook instance, but
+		  larger datasets or complex processes benefit from using SageMaker's
+		  training platform.
+		- Choose an algorithm for training. SageMaker offers over 15 built-in
+		  algorithms for various machine learning tasks, including supervised,
+		  unsupervised learning, and natural language processing. Custom and
+		  third-party algorithms are also supported.
+		- Create a training job by naming it, setting permissions, and
+		  selecting an algorithm. Choose between file mode (for smaller datasets)
+		  and pipe mode (for larger datasets) for data input.
+		- Configure hardware resources for the training job, including
+		  instance type, number of instances, and storage. Consider using managed
+		  spot instances to reduce costs, with SageMaker handling interruptions.
+		- Set hyperparameters specific to the chosen algorithm to control
+		  training. Use hyperparameter tuning jobs to automate the process and
+		  optimize metrics like accuracy.
+		- Configure input data channels from sources like S3, EFS, or FSx for
+		  Lustre, and separate train and test channels for model evaluation.
+		- Specify an output path in S3 for storing training results. Monitor the training job's progress in the console.
+		- Utilize SageMaker Debugger for debugging and optimizing training
+		  jobs, and SageMaker Distributed Training for scaling jobs across
+		  multiple instances.
+		- Explore hands-on labs to gain experience with building and training models using Amazon SageMaker.
+	- Deploy ML models
+		- Four inference options are highlighted: real-time inference with provisioned endpoints, serverless inference with serverless endpoints, asynchronous inference for larger payloads, and batch transform jobs for large
+		  datasets.
+		- SageMaker endpoints require configuration, with two types:
+		  provisioned (requiring upfront infrastructure) and serverless (scaling
+		  automatically).
+		- Serverless endpoints are cost-effective and suitable for workloads
+		  without strict latency requirements, while provisioned endpoints are
+		  ideal for real-time workloads with low latency.
+		- Asynchronous inference allows for queuing requests and receiving
+		  notifications upon completion, with options for data capture and
+		  analysis.
+		- Batch transform jobs handle large payloads and long runtimes, requiring specification of input and output data locations.
+		- SageMaker Inference Recommender can help choose the best deployment configuration.
+		- Post-deployment, continuous monitoring is necessary to manage model
+		  performance and lifecycle, with tools like SageMaker Shadow Tests for
+		  assessing changes.
+		  
+		  > 
+		  
+		  Sagemaker shadow support -  To test pre prod
+	- summary
+		- SageMaker offers various environments and tools, including SageMaker Studio,
+		  Studio Classic, Studio Lab, Code Editor, and Notebook Instances, which
+		  support machine learning tasks with pre-installed libraries like
+		  TensorFlow, PyTorch, and Scikit-learn.
+		- The four-step machine learning workflow was discussed: data preparation, model building, training and tuning, and deployment.
+		- Data preparation is crucial and time-consuming, with tools like Data Wrangler and Ground Truth aiding in the process.
+		- SageMaker Notebook Instances facilitate model building by providing managed Jupyter Notebooks with numerous example notebooks.
+		- Training involves choosing algorithms, with SageMaker offering over
+		  fifteen built-in options and support for third-party and custom
+		  algorithms.
+		- Hyperparameter tuning is automated through SageMaker, allowing for optimization of model performance.
+		- Deployment options include real-time inference, serverless inference, asynchronous inference, and batch transform jobs.
+		- Continuous monitoring of deployed models is necessary to manage their lifecycle and adapt to changes in data and paradigms.
+		  
+		  <!-- notionvc: 80fe6661-2743-4f7f-ab97-e6b48727619c -->
