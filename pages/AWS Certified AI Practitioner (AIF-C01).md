@@ -907,6 +907,7 @@
 		- https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-create.html
 	-
 - Day 14
+  collapsed:: true
 	- Sagemaker and ML workflow
 		- Amazon SageMaker is a fully managed service for building, training, and
 		  deploying machine learning models, catering to data scientists, machine
@@ -1024,3 +1025,181 @@
 		- Continuous monitoring of deployed models is necessary to manage their lifecycle and adapt to changes in data and paradigms.
 		  
 		  <!-- notionvc: 80fe6661-2743-4f7f-ab97-e6b48727619c -->
+- Day 15
+	- ### Texttract
+	- Intro for Textract
+	  collapsed:: true
+		- Amazon Textract is a machine learning service that automates the
+		  extraction of text and data from various documents, including typed and
+		  handwritten text in financial reports, medical records, and tax forms.
+		- It addresses the challenges of manual data extraction, which is
+		  often time-consuming and costly, by processing documents automatically
+		  and accurately without manual intervention.
+		- Textract offers pre-trained and customizable features, enabling
+		  businesses to automate tasks like loan processing and information
+		  extraction from invoices and receipts, significantly speeding up
+		  workflows and reducing costs.
+		- The service is easy to integrate into applications using a simple
+		  API, allowing for quick analysis and data extraction from millions of
+		  documents, with a pay-as-you-go pricing model.
+		- Key features include the AnalyzeDocument API for extracting
+		  information from structured documents, the AnalyzeExpense API for
+		  processing financial documents, and the AnalyzeID API for analyzing ID
+		  documents.
+		- Textract supports various use cases, such as digitizing legal
+		  contracts for easy search and retrieval, enhancing natural language
+		  processing in healthcare, and automating data extraction for financial
+		  analysis and insurance claims processing.
+	- How it works?
+	  collapsed:: true
+		- Amazon Textract is a service that processes documents in various
+		  formats like PDF, JPEG, and PNG, supporting both single and multi-page
+		  documents.
+		- It uses machine learning to identify text elements and their
+		  relationships, performing five key types of document extraction: text,
+		  forms, tables, query responses, and signatures.
+		- Text extraction retrieves raw text, form extraction identifies
+		  key-value pairs, table extraction processes tabular data, query
+		  responses extract specific information, and signature detection
+		  identifies signatures.
+		- Textract can handle both structured and unstructured data, making it versatile for different document processing needs, such as analyzing
+		  invoices and receipts without templates.
+		- It can identify vendor names even when not explicitly labeled and standardizes terms across different documents.
+		- Textract provides detailed output as block objects, which include
+		  pages, lines, words, form data, tables, and layout information, with
+		  confidence scores indicating accuracy.
+		- The service integrates with other AWS services and allows developers to automate text and data extraction, improving efficiency and reducing errors in document processing tasks.
+	- Custom queries in Textract
+	  collapsed:: true
+		- Amazon Textract allows customization of its output using custom queries to better fit specific business needs.
+		- Users can create adapters by annotating and labeling sample documents to identify the information they want to extract.
+		- Documents can be uploaded from a computer or imported from an Amazon S3 bucket for training and testing datasets.
+		- The adapter learns unique patterns and structures from the
+		  documents, and auto-labeling can detect similar fields across documents.
+		- Each adapter is assigned an ID and version, which are used in
+		  requests to the AnalyzeDocument API or StartDocumentAnalysis operation.
+		- Multiple adapters and versions can be specified for different pages in multi-page documents.
+		- Adapter performance can be improved by adding more documents to the
+		  training dataset and retraining, with performance evaluated using
+		  metrics like F1 Score, Precision, and Recall.
+		- Custom queries enhance data extraction accuracy for specific
+		  document formats, benefiting industries like healthcare, banking, and
+		  insurance by tailoring the model to extract relevant information
+		  accurately.
+	- Processing Docs sync vs assync
+	  collapsed:: true
+		- Synchronous operations provide real-time processing, returning immediate results,
+		  ideal for quick document analysis and customer-facing applications.
+		- They are suitable for small batches of documents and time-sensitive
+		  workflows but have limitations like a 10 MB document size cap and a
+		  30-second processing time limit.
+		- Asynchronous operations allow for processing without immediate
+		  results, beneficial for large documents or batches, without the size and time constraints of synchronous operations.
+		- Asynchronous operations are ideal for high-volume scenarios and integrate well with systems that handle background processing.
+		- Amazon Textract offers specific APIs for both synchronous and
+		  asynchronous operations, each suited for different document processing
+		  needs.
+	- Best practices for Textract
+	  collapsed:: true
+		- Ensure documents are in a language supported by Amazon Textract
+		  (English, Spanish, German, Italian, French, Portuguese) and have a
+		  high-quality image resolution of at least 150 DPI.
+		- Use supported file formats (PDF, JPEG, PNG) without converting or downsampling before uploading.
+		- For tables, ensure they are visually distinct from other elements and text is upright.
+		- Optimize document images for synchronous operations to improve speed and accuracy, handle errors effectively, and consider document size
+		  limits.
+		- For asynchronous operations, use a robust polling mechanism with
+		  exponential backoff and consider using Amazon SNS for job completion
+		  notifications.
+		- Store results in Amazon S3 for scalable and durable data management.
+		- Pay attention to confidence scores (0-100) to determine the
+		  reliability of predictions, setting thresholds based on application
+		  sensitivity.
+		- Incorporate human review for sensitive applications to enhance accuracy.
+		- For custom queries, use diverse sample data, logical and specific query structures, and maintain consistent annotation styles.
+	- Security in Textract
+	  collapsed:: true
+		- Amazon Textract operates under the AWS Shared Responsibility Model, where AWS
+		  secures the infrastructure, and customers manage content security.
+		- Use AWS IAM Identity Center to set up user accounts with appropriate permissions and enable multi-factor authentication for added security.
+		- Secure data transmissions with SSL or TLS to protect data in transit.
+		- Enable AWS CloudTrail for logging API and user activities to maintain visibility and accountability.
+		- Utilize AWS encryption solutions and default security controls to strengthen data protection.
+		- For sensitive data, consider using advanced security services like Amazon Macie to discover and protect sensitive information.
+		- Exercise caution when handling sensitive data to avoid exposing it in diagnostic logs.
+		- Amazon Textract uses robust encryption methods for data at rest and
+		  in transit, including server-side encryption with Amazon S3-managed keys or AWS Key Management Service.
+		- The service uses transport layer security and VPC endpoints for secure communication during document processing.
+	- Logging and Monitoring
+	  collapsed:: true
+		- Amazon Textract integrates with Amazon CloudWatch for comprehensive
+		  monitoring, allowing tracking of individual operations and global
+		  metrics.
+		- CloudWatch can monitor metrics like server errors and success rates, and set up alarms for specific thresholds to maintain workflow
+		  reliability.
+		- CloudWatch alarms respond to sustained state changes, triggering actions like notifications if conditions persist.
+		- AWS CloudTrail provides logging capabilities, capturing all API calls to Amazon Textract for security and compliance.
+		- CloudTrail logs include details like requester's identity, helping track actions and maintain an audit trail.
+		- Amazon Textract supports resource tagging for better organization
+		  and access management, allowing efficient categorization and permission
+		  control.
+	- ### Polly
+	- Helps to achieve text to speech
+	- Getting started with Polly
+		- Amazon Polly can be integrated into applications using AWS software
+		  development kits (SDKs), the AWS management console, or the command line interface (CLI).
+		- The AWS SDK for Python is recommended for creating a Polly client, sending text synthesis requests, and handling audio streams.
+		- Users can generate high-quality speech for various applications,
+		  such as e-learning platforms and customer service, using the SDK.
+		- The Amazon Polly console allows users to select engine types,
+		  languages, and voices to synthesize speech, which can be listened to
+		  directly.
+		- The AWS CLI can also be used to interact with Amazon Polly, though
+		  it requires saving the output to a file to listen to the synthesized
+		  speech.
+		- To use the AWS CLI, users must download and configure it, create a named profile, and verify the setup.
+	- Language offerings
+		- Amazon Polly offers a variety of lifelike voices and supports multiple languages, allowing for global application development.
+		- It provides voices for languages such as Arabic, Chinese, Danish,
+		  Dutch, and English, with each voice optimized for accurate pronunciation and natural intonation.
+		- Users can test voices using their own text in the AWS Management
+		  Console, with most languages offering at least one male and one female
+		  voice.
+		- Voice speed varies naturally among different voices, and users can
+		  adjust speed using Speech Synthesis Markup Language (SSML) tags.
+		- SSML allows for preset speed adjustments (extra slow to extra fast) or custom speed settings between 20% and 200%.
+		- The Brand Voice feature enables the creation of custom voices that
+		  represent a brand's persona, using neural text-to-speech technology and
+		  generative AI.
+		- Amazon Polly can train neural voices for specific speaking styles,
+		  such as a newscaster style, to match different situational speech
+		  patterns.
+	- Voice Engines in polly
+		- Amazon Polly offers a wide range of lifelike voices in multiple languages, suitable for global applications.
+		- The standard engine uses concatenative synthesis, piecing together recorded phonemes to create natural-sounding speech.
+		- The neural text-to-speech engine uses advanced techniques to produce more natural and high-quality voices by converting phonemes into
+		  spectrograms and then into audio signals.
+		- The long-form engine is designed for engaging, human-like voices
+		  suitable for lengthy content, using deep learning to replicate speech
+		  nuances and emotions.
+		- The generative engine employs a billion-parameter transformer and
+		  convolution-based decoder to create highly adaptive and emotionally
+		  engaging voices, leveraging large language models.
+		- These technologies enable the creation of realistic and engaging
+		  synthetic speech for various applications, such as customer assistants
+		  and virtual trainers.
+	- SSML with Polly
+		- SSML is an XML-based language that allows users to control various aspects
+		  of speech, such as pronunciation, volume, pitch, and speed.
+		- By incorporating SSML tags, users can instruct Amazon Polly to
+		  include pauses, change speech rate or pitch, emphasize words, use
+		  phonetic pronunciation, and add effects like breathing or whispering.
+		- In the AWS management console, users can enter SSML-enhanced text to customize speech output beyond default settings.
+		- The prosody element in SSML can adjust volume, pitch, and speed, and these attributes can be combined for simultaneous adjustments.
+		- Breathing sounds and whisper effects can be added using specific SSML tags to make speech sound more natural.
+		- The emphasis element highlights specific words or phrases, making them stand out in the speech output.
+		- The say-as element provides context for how text should be spoken,
+		  ensuring correct pronunciation of numbers, dates, and other text types.
+		- Overall, SSML allows for the creation of dynamic and engaging speech tailored to specific needs.
+		  
+		  <!-- notionvc: d6eb59a6-5b21-410c-b5be-0b0779a1a2aa -->
