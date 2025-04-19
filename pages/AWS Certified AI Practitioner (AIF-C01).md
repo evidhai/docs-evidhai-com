@@ -1210,7 +1210,7 @@
 	- Cpmprehend
 	- Textract
 - Day 17
-	- | This Day is marathon means we spent longer dueration than 45min to speedup the process
+	- > This Day is marathon means we spent longer dueration than 45min to speedup the process
 	-
 	- Sagemaker for MLops
 	  collapsed:: true
