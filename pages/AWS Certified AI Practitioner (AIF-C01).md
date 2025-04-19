@@ -1225,3 +1225,18 @@
 		  data preparation to model validation, with flexible execution options, 
 		  including scheduled runs or event-triggered processes.
 	- Sagemaker Studio
+	  collapsed:: true
+		- Amazon SageMaker Studio is an integrated development environment designed to streamline machine learning workflows.
+		- It combines various functionalities, allowing users to write code, 
+		  perform visualizations, debug, track, and monitor model performance in a
+		  single platform.
+		- SageMaker Studio works with SageMaker Pipelines to automate and manage end-to-end machine learning workflows.
+		- SageMaker Debugger helps diagnose and resolve issues like 
+		  overfitting and vanishing gradients during training, offering insights 
+		  and recommendations for improvement.
+		- Amazon SageMaker Model Monitor continuously checks models in 
+		  production for anomalies, such as data drift, and alerts users to 
+		  maintain model accuracy.
+		- The platform supports managing numerous training jobs by organizing,
+		  tracking, and comparing experiments, enhancing workflow efficiency.
+	-
