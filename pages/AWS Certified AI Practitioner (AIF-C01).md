@@ -1386,3 +1386,15 @@
 		  insights.
 		  
 		  <!-- notionvc: 1e02c31e-88fc-4c15-bc62-db200c60e02d -->
+	- Three types of models to process data
+		- Single document processing is asynchronous and suitable for analyzing one
+		  document at a time, with operations like DetectDominantLanguage and
+		  DetectSentiment.
+		- Multi-document synchronous processing allows analysis of up to 25
+		  documents simultaneously using Batch operations, providing individual
+		  results for each document.
+		- Asynchronous batch processing is ideal for large documents or
+		  quantities, requiring data in Amazon S3 and UTF-8 format, with
+		  additional operations for topic modeling.
+		  
+		  <!-- notionvc: e8b632a8-9c10-4695-8682-f8c4ee46c81c -->
