@@ -1239,4 +1239,31 @@
 		  maintain model accuracy.
 		- The platform supports managing numerous training jobs by organizing,
 		  tracking, and comparing experiments, enhancing workflow efficiency.
+	- Sagemaker pipeline
+	  collapsed:: true
+		- Amazon SageMaker Model Building Pipelines is a workflow 
+		  orchestration service designed to automate the machine learning process,
+		  from data pre-processing to model monitoring.
+		- It integrates CICD practices into machine learning workflows, 
+		  optimizing training and deployment capabilities while reducing the need 
+		  for extensive workflow tools.
+		- SageMaker Pipelines offers prebuilt templates, making it accessible 
+		  even to those with limited CICD knowledge, and allows pipeline creation 
+		  using the SageMaker Python SDK or JSON Schema.
+		- The service uses a Directed Acyclic Graph (DAG) to manage the 
+		  execution order of pipeline steps, ensuring a one-way flow of data 
+		  without loops.
+		- Pipelines consist of various steps like processing, training, and 
+		  evaluation, with dependencies defined by data outputs and custom 
+		  attributes.
+		- Step failures can occur due to resource constraints or service 
+		  errors, but retry policies can enhance pipeline resilience by 
+		  automatically retrying failed steps.
+		- Amazon EventBridge can trigger pipeline executions based on specific events, automating and improving workflow efficiency.
+		- SageMaker Studio allows users to monitor pipeline executions, view 
+		  DAGs, and access detailed information about each step, including status 
+		  and runtime metrics.
+		- The final outputs of a pipeline can include files and models, with 
+		  artifacts tracked at each stage to understand how outcomes were 
+		  achieved.
 	-
