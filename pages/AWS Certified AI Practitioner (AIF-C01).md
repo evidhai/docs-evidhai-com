@@ -1347,3 +1347,17 @@
 		- Overall, Amazon Q in CodeCatalyst enhances productivity and workflow efficiency.
 		  
 		  <!-- notionvc: f32e78ef-2ea9-4f61-a7ab-4745c75eaad5 -->
+	- Amazon Q in IDE
+	  collapsed:: true
+		- The /clear command refreshes the chat window, providing a clean slate for new interactions.
+		- The /help command offers information about Amazon Q's capabilities, limitations, and useful commands.
+		- Two specific commands for Amazon CodeWhisperer users are highlighted: /transform and /dev.
+		- The /transform command assists in upgrading code bases to newer
+		  versions, identifying necessary changes, and creating tests to ensure
+		  successful upgrades.
+		- The /dev command provides code suggestions for developing new
+		  features by analyzing project files and creating implementation plans
+		  based on user input.
+		- These commands enhance developer efficiency by simplifying code upgrades and feature development.
+		  
+		  <!-- notionvc: afb145ee-0227-49df-977a-6105ceb07fd5 -->
