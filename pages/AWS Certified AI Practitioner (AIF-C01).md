@@ -1285,4 +1285,36 @@
 		  training jobs.
 		  
 		  <!-- notionvc: 81a6d871-b634-484f-9e28-c8537f491a0a -->
+	- Sagemaker Projects
+	  collapsed:: true
+		- SageMaker projects facilitate efficient code sharing, consistent code quality,
+		  and strict version control in collaborative machine learning projects.
+		- Projects are provisioned from the AWS Service Catalog using custom
+		  or SageMaker provided templates, which include ready-made templates for
+		  quick starts with machine learning workflows and CI/CD.
+		- SageMaker templates support AWS tools like CodeBuild, CodeCommit,
+		  CodePipeline, and third-party tools like GitHub and Jenkins for CI/CD
+		  workflow automation.
+		- A typical SageMaker project includes repositories with example code
+		  for building and deploying machine learning solutions, allowing
+		  organizations to customize resources to their needs.
+		- The MLOps template for model building and training manages data
+		  processing, feature extraction, model training/testing, and model
+		  registry integration.
+		- This template includes an AWS CodeCommit repository with sample
+		  Python code, an AWS CodePipeline with source and build steps, and an
+		  Amazon S3 bucket for storing artifacts.
+		- If pre-made templates don't meet specific requirements, organizations can create customized templates.
+		- The model deployment template streamlines deploying models from the
+		  SageMaker model registry to endpoints for real-time inference,
+		  automatically initiating deployment when a new model version is
+		  registered.
+		- It includes a CodeCommit repository with configuration files, AWS
+		  CloudFormation templates, and a CodePipeline for deploying models to
+		  staging and production environments.
+		- The pipeline uses a CloudWatch event to trigger automatically upon
+		  model package version approval or rejection and stores artifacts in an
+		  Amazon S3 bucket.
+		  
+		  <!-- notionvc: 50797e92-79ac-4469-ada0-6bb5fa4adf76 -->
 	-
