@@ -1342,6 +1342,21 @@
 		- Amazon Q is not limited to a single interface; it integrates across 
 		  various platforms, including the AWS console, development IDEs, and 
 		  other AWS services like Amazon QuickSight and Amazon Connect.
+	- Amazon Q in Quicksight
+	  collapsed:: true
+		- Amazon Q in QuickSight enhances business intelligence by using
+		  natural language to create and refine dashboards and reports, helping
+		  users understand data insights.
+		- It allows users to ask questions conversationally to uncover reasons behind data trends, such as sales decreases in specific regions.
+		- Amazon Q can generate executive summaries and tailor them for different organizational stakeholders.
+		- In customer service, Amazon Q integrates with Amazon Connect to
+		  assist call center agents by processing conversations in real-time,
+		  offering solutions, and reducing the need for supervisor intervention.
+		- For supply chain management, Amazon Q in AWS Supply Chain enables
+		  querying of data to assess current status and explore potential
+		  scenarios, aiding in risk mitigation and resilience planning.
+		  
+		  <!-- notionvc: 72fc7bd5-d80e-4cf8-b3f6-b2500ab12f35 -->
 	- Amazon Q for Data engineer
 	  collapsed:: true
 		- Amazon Q in AWS Glue provides a chat interface that helps users with data
