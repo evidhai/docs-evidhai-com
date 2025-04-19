@@ -1461,6 +1461,7 @@
 	-
 	- ## Security
 	- Securing AI systems
+	  collapsed:: true
 		- Key security practices include using encryption for data in transit and at rest, and managing permissions with least privilege.
 		- AWS services like KMS and AWS Certificate Manager are recommended
 		  for encryption, while IAM is crucial for managing access to applications and data.
@@ -1475,3 +1476,21 @@
 		- Model cards in SageMaker are used for documenting machine-learning models to support governance and audits.
 		  
 		  <!-- notionvc: 6006fe02-110a-46ec-9403-cbb718bc6858 -->
+	- Services to focus for security
+	  collapsed:: true
+		- **Audit Manager**: Assesses and manages risk in AWS
+		  environments to assist with compliance to industry standards like ISO
+		  27001, HIPAA, and PCI DSS. It centralizes audit management and
+		  collaboration.
+		- **CloudTrail**: Tracks all events in the Cloud environment, answering who, what, and when, aiding in governance and transparency.
+		- **AWS Artifact**: Centralizes management of compliance documents and supports notifications for document updates.
+		- **SageMaker Clarify**: Evaluates AI models for compliance with standards like ISO 42001, detecting bias and risks during data preparation.
+		- **Amazon Inspector**: Scans EC2 instances, containers,
+		  and Lambda functions for vulnerabilities, helping maintain compliance
+		  with standards like PCI DSS and NIST.
+		- **Amazon Macie**: Inspects S3 data for potential PII leaks, ensuring AI models maintain neutrality and protect proprietary information.
+		- **S3**: Default choice for storing input and output data in AWS, with a focus on storage classes, bucket policies, and encryption.
+		- **Trusted Advisor**: Aligns AWS environments with best practices, offering recommendations for security, cost optimization, and performance.
+		- **Guardrails for Bedrock**: Provides AI-specific safeguards, blocking harmful content, filtering sensitive data, and ensuring relevant AI responses.
+		  
+		  <!-- notionvc: 8a35950c-ce44-40a1-bb2b-606345510eab -->
