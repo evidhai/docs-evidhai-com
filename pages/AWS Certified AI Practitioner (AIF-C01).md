@@ -1387,6 +1387,7 @@
 		  
 		  <!-- notionvc: 1e02c31e-88fc-4c15-bc62-db200c60e02d -->
 	- Three types of models to process data
+	  collapsed:: true
 		- Single document processing is asynchronous and suitable for analyzing one
 		  document at a time, with operations like DetectDominantLanguage and
 		  DetectSentiment.
@@ -1398,3 +1399,26 @@
 		  additional operations for topic modeling.
 		  
 		  <!-- notionvc: e8b632a8-9c10-4695-8682-f8c4ee46c81c -->
+	- Comprehend features and usecase
+	  collapsed:: true
+		- Amazon Comprehend offers a feature called Comprehend Custom, allowing users to create machine learning models tailored to their specific
+		  organizational needs, enabling the detection of custom classifications
+		  and entities in text.
+		- The service provides API integration, making it easy to incorporate
+		  sophisticated text analysis into existing applications without needing
+		  specialized expertise in textual analysis.
+		- Amazon Comprehend integrates with various AWS services, such as AWS
+		  Lambda, Amazon S3, AWS Key Management Service, and Kinesis Data
+		  Firehose, facilitating seamless data processing and analysis.
+		- Security is emphasized through integration with IAM for access
+		  control and KMS for data encryption, ensuring secure handling of
+		  potentially sensitive information.
+		- The service is highly scalable, capable of analyzing millions of
+		  documents to provide valuable insights, which can be leveraged to
+		  improve business outcomes, such as responding quickly to customer
+		  sentiment.
+		- Amazon Comprehend's deep learning models are continuously trained with global data, enhancing accuracy over time.
+		- A related service, Amazon Comprehend Medical, applies NLP to extract
+		  and identify medical and healthcare-related attributes from unstructured medical text, aiding in faster diagnosis and treatment decisions.
+		  
+		  <!-- notionvc: b9d9262e-3ecc-4d50-b4e0-ef18ce37f768 -->
