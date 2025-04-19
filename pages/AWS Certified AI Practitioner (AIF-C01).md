@@ -1210,6 +1210,8 @@
 	- Cpmprehend
 	- Textract
 - Day 17
+	- | This Day is marathon means we spent longer dueration than 45min to speedup the process
+	-
 	- Sagemaker for MLops
 	  collapsed:: true
 		- SageMaker integrates with AWS DevOps tools like CodeCommit, CodeBuild, 
@@ -1318,3 +1320,17 @@
 		  
 		  <!-- notionvc: 50797e92-79ac-4469-ada0-6bb5fa4adf76 -->
 	-
+	-
+	- ## Amazon Q
+	- Amazon Q for Data engineer
+		- Amazon Q in AWS Glue provides a chat interface that helps users with data
+		  integration tasks by offering guidance, generating code, and
+		  troubleshooting issues.
+		- Users can interact with Q in plain English to receive expert advice, sample code, and solutions for AWS Glue-specific problems.
+		- Amazon Q also integrates with Amazon Redshift, allowing users to
+		  generate SQL queries in the Redshift Query Editor using natural
+		  language.
+		- This integration aims to enhance productivity by reducing the need
+		  for extensive coding expertise and simplifying data querying processes.
+		  
+		  <!-- notionvc: 28eff32e-0865-43b2-9b89-30e9c34d69ca -->
