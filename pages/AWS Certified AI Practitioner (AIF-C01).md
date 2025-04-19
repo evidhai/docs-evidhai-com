@@ -1361,3 +1361,28 @@
 		- These commands enhance developer efficiency by simplifying code upgrades and feature development.
 		  
 		  <!-- notionvc: afb145ee-0227-49df-977a-6105ceb07fd5 -->
+	-
+	-
+	- ## Comprehend
+	- Intro of comprehend
+	  collapsed:: true
+		- Amazon Comprehend is a machine learning service under AWS that uses
+		  natural language processing (NLP) to extract insights from text
+		  documents.
+		- NLP is a subfield of linguistics, computer science, and AI focused
+		  on interactions between computers and human language, enabling computers to understand document content and language nuances.
+		- Amazon Comprehend can analyze documents at scale, extracting key phrases, entities, sentiment, and more using various APIs.
+		- Key phrases are noun phrases identified with a confidence score, helping applications determine their relevance.
+		- Sentiment analysis determines the emotional context of text,
+		  categorizing it as positive, negative, neutral, or mixed, with
+		  percentage scores for each.
+		- Entities are references to people, places, events, dates, and commercial items, each classified with a confidence score.
+		- The service can identify and redact personally identifiable information (PII) to manage security risks.
+		- It supports multiple languages, determining the dominant language in a text with a confidence rating.
+		- Syntax analysis classifies words by their syntactic function, building an understanding of word relationships.
+		- Topic modeling identifies common themes in large text corpora, organizing documents into categories.
+		- Amazon Comprehend is a fully managed, continuously trained NLP
+		  service that analyzes text in various formats to provide meaningful
+		  insights.
+		  
+		  <!-- notionvc: 1e02c31e-88fc-4c15-bc62-db200c60e02d -->
