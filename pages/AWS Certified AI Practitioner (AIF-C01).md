@@ -1266,4 +1266,23 @@
 		- The final outputs of a pipeline can include files and models, with 
 		  artifacts tracked at each stage to understand how outcomes were 
 		  achieved.
+	- Sagemaker operators for kubernetes
+	  collapsed:: true
+		- SageMaker operators for Kubernetes simplify the management of containerized
+		  machine learning models by allowing direct management of SageMaker
+		  resources within Kubernetes.
+		- This integration helps DevOps teams streamline complex workflows and infrastructure management, enhancing control, portability, and
+		  performance.
+		- Kubeflow Pipelines enable the creation and deployment of scalable
+		  machine learning workflows using Docker containers, with components that perform specific tasks in the pipeline.
+		- SageMaker components for Kubeflow Pipelines allow users to manage
+		  machine learning workflows through a user interface and SDK, shifting
+		  compute workloads from Kubernetes clusters to SageMaker.
+		- Two versions of SageMaker components are available, with version 2
+		  offering enhanced resource management across various applications.
+		- Specific components include Ground Truth for labeling jobs, Workteam for private work team jobs, Data Processing for processing jobs, and
+		  training and hyperparameter optimization components for managing
+		  training jobs.
+		  
+		  <!-- notionvc: 81a6d871-b634-484f-9e28-c8537f491a0a -->
 	-
