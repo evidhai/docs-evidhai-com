@@ -1494,3 +1494,31 @@
 		- **Guardrails for Bedrock**: Provides AI-specific safeguards, blocking harmful content, filtering sensitive data, and ensuring relevant AI responses.
 		  
 		  <!-- notionvc: 8a35950c-ce44-40a1-bb2b-606345510eab -->
+	-
+	- ## Audit manager
+	- Intro
+		- AWS Audit Manager is a service designed to continuously audit AWS
+		  usage and environments, helping assess risk and compliance with
+		  regulatory and industry standards.
+		- It automates evidence collection for auditors and security
+		  professionals, facilitating the creation of reports for stakeholders or
+		  governmental review.
+		- The service maps AWS usage to controls, ensuring alignment with
+		  governmental or industry requirements through pre-configured frameworks
+		  like GDPR and CIS.
+		- AWS Audit Manager supports collaboration among internal audit members, GRC, and IT/SecOps teams.
+		- To start using AWS Audit Manager, users must create an assessment,
+		  which involves collecting evidence related to a specific framework.
+		- AWS provides a library of managed frameworks and allows for the creation of custom frameworks to meet specific needs.
+		- The audit process involves roles such as Audit Owner, who manages
+		  assessments, and Audit Delegates, who are subject matter experts
+		  reviewing specific controls.
+		- Audit Manager continuously monitors AWS services specified in the framework, collecting evidence to verify compliance.
+		- Users can create assessments through the AWS console or CLI/API,
+		  specifying details like assessment name, framework, and AWS accounts
+		  involved.
+		- The assessment report summarizes collected evidence and includes direct links to evidence files, but does not assess compliance.
+		- Reports are structured with sections like a cover page, overview,
+		  and evidence summary, and are stored in an S3 bucket for access.
+		  
+		  <!-- notionvc: 9b7b19be-0252-4f41-bfbe-ab24caf71f15 -->
