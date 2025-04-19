@@ -1457,3 +1457,21 @@
 		  and identify medical and healthcare-related attributes from unstructured medical text, aiding in faster diagnosis and treatment decisions.
 		  
 		  <!-- notionvc: b9d9262e-3ecc-4d50-b4e0-ef18ce37f768 -->
+	-
+	-
+	- ## Security
+	- Securing AI systems
+		- Key security practices include using encryption for data in transit and at rest, and managing permissions with least privilege.
+		- AWS services like KMS and AWS Certificate Manager are recommended
+		  for encryption, while IAM is crucial for managing access to applications and data.
+		- The lecture explains identity-based and resource-level policies,
+		  noting that not all AWS services support resource-level policies.
+		- VPCs, VPC Endpoints, and AWS PrivateLink are discussed as essential networking elements for secure Cloud deployments.
+		- Specific security considerations for Amazon's AI services, Bedrock
+		  and SageMaker, are covered, including preventing Prompt Injection
+		  attacks and using GuardDuty for monitoring vulnerabilities.
+		- For SageMaker, data protection involves using CloudTrail, Amazon
+		  Macie, and encryption, while data quality is ensured with SageMaker Data Wrangler and AWS Glue Data Quality.
+		- Model cards in SageMaker are used for documenting machine-learning models to support governance and audits.
+		  
+		  <!-- notionvc: 6006fe02-110a-46ec-9403-cbb718bc6858 -->
