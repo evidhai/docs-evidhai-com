@@ -1323,6 +1323,7 @@
 	-
 	- ## Amazon Q
 	- Amazon Q for Data engineer
+	  collapsed:: true
 		- Amazon Q in AWS Glue provides a chat interface that helps users with data
 		  integration tasks by offering guidance, generating code, and
 		  troubleshooting issues.
@@ -1334,3 +1335,15 @@
 		  for extensive coding expertise and simplifying data querying processes.
 		  
 		  <!-- notionvc: 28eff32e-0865-43b2-9b89-30e9c34d69ca -->
+	- Amazon Q in codecatalyst
+	  collapsed:: true
+		- Amazon Q enhances productivity in CodeCatalyst through three main features:
+			- **Pull Request Summaries**: Q automatically generates descriptions for pull requests by analyzing changes between source and destination code branches.
+			- **Comment Summaries**: Q summarizes feedback comments on pull requests, identifying common suggestions, though these summaries are temporary.
+			- **Issue Assignment**: Developers can assign issues to
+			  Amazon Q, which attempts to create solutions. Users must specify
+			  feedback levels, workflow file updates, and the repository for Q to work in.
+		- Once an issue is assigned, Q drafts a solution, creates a branch, commits code, and generates a pull request for review.
+		- Overall, Amazon Q in CodeCatalyst enhances productivity and workflow efficiency.
+		  
+		  <!-- notionvc: f32e78ef-2ea9-4f61-a7ab-4745c75eaad5 -->
