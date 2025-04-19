@@ -1211,8 +1211,8 @@
 	- Textract
 - Day 17
 	- Sagemaker for MLops
-		- ageMaker
-		  integrates with AWS DevOps tools like CodeCommit, CodeBuild, 
+	  collapsed:: true
+		- SageMaker integrates with AWS DevOps tools like CodeCommit, CodeBuild, 
 		  CodeDeploy, and CodePipeline, facilitating continuous delivery and 
 		  deployment for machine learning applications.
 		- CodePipeline supports rapid feature updates and model improvements, 
@@ -1224,3 +1224,4 @@
 		- SageMaker Pipelines automate the entire model building process, from
 		  data preparation to model validation, with flexible execution options, 
 		  including scheduled runs or event-triggered processes.
+	- Sagemaker Studio
