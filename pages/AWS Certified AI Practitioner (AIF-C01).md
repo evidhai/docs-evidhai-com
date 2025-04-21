@@ -1548,4 +1548,22 @@
 		  <!-- notionvc: 88d19f8a-2ff1-4e40-bbd7-337538258a02 -->
 	-
 	- ## Cloudtrail
-	-
+	- Cloudtrails Intro
+		- AWS CloudTrail is a service that records and tracks events, including API and non-API requests, within an AWS account.
+		- It categorizes events into three types: Management Events, Data Events, and CloudTrail Insight Events.
+		- Management Events track management operations on AWS resources, 
+		  while Data Events focus on resource operations like S3 object-level 
+		  activities.
+		- Insight Events capture unusual activities, helping identify potential issues.
+		- CloudTrail is enabled by default for new AWS accounts, allowing 
+		  event viewing through the Event History in the AWS Management Console.
+		- Users can create CloudTrail Trails to store, review, and analyze 
+		  events beyond the Event History, with data stored in Amazon S3 or sent 
+		  to Amazon CloudWatch Logs.
+		- There are three types of Trails: All Region Trail, Single Region 
+		  Trail, and AWS Organization Trail, each serving different scopes and 
+		  purposes.
+		- CloudTrail Lake allows storing and querying events for up to 7 years, using SQL queries to extract specific data for analysis.
+		- CloudTrail Lakes can also capture log events from AWS Config and 
+		  external sources, integrating with partners like CrowdStrike and GitHub 
+		  through CloudTrail channels.
