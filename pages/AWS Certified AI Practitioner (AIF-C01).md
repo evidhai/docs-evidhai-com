@@ -1523,3 +1523,4 @@
 		  and evidence summary, and are stored in an S3 bucket for access.
 		  
 		  <!-- notionvc: 9b7b19be-0252-4f41-bfbe-ab24caf71f15 -->
+- Day 18
