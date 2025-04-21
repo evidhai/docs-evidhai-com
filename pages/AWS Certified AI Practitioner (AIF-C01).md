@@ -1546,3 +1546,6 @@
 		- Key policies and grants are used to control access to KMS keys, with grants providing temporary access without altering key policies.
 		  
 		  <!-- notionvc: 88d19f8a-2ff1-4e40-bbd7-337538258a02 -->
+	-
+	- ## Cloudtrail
+	-
