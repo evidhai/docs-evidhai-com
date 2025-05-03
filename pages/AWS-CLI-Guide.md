@@ -92,6 +92,7 @@ This covers basics to know , on AWS CLI and reference links included.
 	  aws s3 ls                       *# List all buckets*
 	  ```
 	- ### Move to different role
+	  collapsed:: true
 		- Unset
 		- ```bash
 		  unset AWS_ACCESS_KEY_ID
@@ -103,7 +104,17 @@ This covers basics to know , on AWS CLI and reference links included.
 		  export AWS_ACCESS_KEY_ID=<<key_id>>
 		  export AWS_SECRET_ACCESS_KEY=<<key>>
 		  ```
+		- ```
+		  eval $(aws sts assume-role \
+		    --role-arn <<replace iam role arn>> \
+		    --role-session-name cli-session \
+		    --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
+		    --output text | \
+		  awk '{print "export AWS_ACCESS_KEY_ID="$1"\nexport AWS_SECRET_ACCESS_KEY="$2"\nexport AWS_SESSION_TOKEN="$3}')
+		  ```
+			-
 -
+- ### CLI Profile
 	-
 - ### **Output Formats**
   
