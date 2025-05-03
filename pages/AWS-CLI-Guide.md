@@ -201,7 +201,7 @@ This covers basics to know , on AWS CLI and reference links included.
 - ```bash
   --output json|text|table
   ```
-- ## **5. Advanced CLI Usage**
+- ## **Advanced CLI Usage**
 - ### **Waiters**
   
   ```bash
