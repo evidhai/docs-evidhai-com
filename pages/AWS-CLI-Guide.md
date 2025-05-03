@@ -5,7 +5,7 @@ This covers basics to know , on AWS CLI and reference links included.
 - ---
 - ## **1. Introduction**
   
-  AWS CLI is a powerful tool to interact with AWS services using commands in your terminal. It supports all AWS services and helps automate your workflows.
+  AWS CLI is an AWS native tools, which enables to interact with AWS services using commands in your terminal. It supports all AWS services and helps automate your workflows.
   
   ---
 - ## **2. Installation and Configuration**
