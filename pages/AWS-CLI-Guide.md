@@ -9,7 +9,6 @@ This covers basics to know , on AWS CLI and reference links included.
   
   ---
 - ## **Installation and Configuration**
-  collapsed:: true
 	- ### **Install AWS CLI**
 	- ****Windows/macOS/Linux****: [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 	  
@@ -51,8 +50,7 @@ This covers basics to know , on AWS CLI and reference links included.
 	- Secret Access Key
 	- Default region (e.g., us-east-1)
 	- Default output format (json, text, table)
-	  
-	  ---
+	- ---
 - ## **Basic CLI Usage**
 	- ### **Syntax**
 	  
