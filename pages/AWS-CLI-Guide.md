@@ -138,12 +138,12 @@ This covers basics to know , on AWS CLI and reference links included.
 	  
 	  ```bash
 	  
-	  --output json|text|table
+	  
 	  
 	  ```
 	  
 	  ---
-- ## **4. Common AWS Services with CLI**
+- ## **Common AWS Services with CLI**
 - ### **S3 (Simple Storage Service)**
   
   ```bash
