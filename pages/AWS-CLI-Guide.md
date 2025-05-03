@@ -3,30 +3,8 @@
 Welcome to your AWS CLI (Command Line Interface) journey! This guide is structured to take you from a complete beginner to an advanced user with real-world, hands-on experience.
 
 ---
-- ## **Table of Contents**
-  
-  1. [Introduction](#1-introduction)
-  
-  2. [Installation and Configuration](#2-installation-and-configuration)
-  
-  3. [Basic CLI Usage](#3-basic-cli-usage)
-  
-  4. [Common AWS Services with CLI](#4-common-aws-services-with-cli)
-  
-  5. [Advanced CLI Usage](#5-advanced-cli-usage)
-  
-  6. [Automation and Scripting](#6-automation-and-scripting)
-  
-  7. [Pagination and Querying](#7-pagination-and-querying)
-  
-  8. [Security and Best Practices](#8-security-and-best-practices)
-  
-  9. [Useful Tips and Tools](#9-useful-tips-and-tools)
-  
-  10. [Using jq for JSON Processing](#10-using-jq-for-json-processing)
-  
-  ---
-- ## **Introduction**
+- ---
+- ## **1. Introduction**
   
   AWS CLI is a powerful tool to interact with AWS services using commands in your terminal. It supports all AWS services and helps automate your workflows.
   
