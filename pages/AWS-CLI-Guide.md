@@ -3,7 +3,7 @@
 This covers basics to know , on AWS CLI and reference links included.
 - Notes are prepared by [Keerthivasan Kannan](https://www.linkedin.com/in/keerthivasan-kannan/)
 - ---
-- ## **1. Introduction**
+- ## ** Introduction**
   
   AWS CLI is an AWS native tools, which enables to interact with AWS services using commands in your terminal. It supports all AWS services and helps automate your workflows.
   
@@ -209,15 +209,7 @@ This covers basics to know , on AWS CLI and reference links included.
   ```
   
   ---
-- ## **8. Security and Best Practices**
-- ****Never expose your credentials**** (use IAM roles or environment variables)
-- Use ****least privilege principle**** for IAM
-- Enable ****MFA**** for users
-- Rotate keys regularly
-- Log CLI activity with ****CloudTrail****
-  
-  ---
-- ## **9. Useful Tips and Tools**
+- ## **Useful Tips and Tools**
 - `aws help` or `aws <service> help`
 - Use `aws configure list`
 - Install `jq` for JSON parsing
