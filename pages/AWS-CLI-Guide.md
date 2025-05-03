@@ -9,6 +9,7 @@ This covers basics to know , on AWS CLI and reference links included.
   
   ---
 - ## **Installation and Configuration**
+  collapsed:: true
 	- ### **Install AWS CLI**
 	- ****Windows/macOS/Linux****: [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 	  
@@ -53,21 +54,21 @@ This covers basics to know , on AWS CLI and reference links included.
 	  
 	  ---
 - ## **Basic CLI Usage**
-- Basic CLI Usage**
-- ### **Syntax**
-  
-  ```bash
-  
-  aws <service> <operation> [parameters]
-  
-  ```
-- ### Who you are?
-- ### sts
-- ```bash
-  aws sts get-caller-identity
-  ```
+	- ### **Syntax**
+	  
+	  ```bash
+	  
+	  aws <service> <operation> [parameters]
+	  
+	  ```
 -
-- ## assume role
+	- ### Who you are?
+	- ### sts
+	- ```bash
+	  aws sts get-caller-identity
+	  ```
+-
+	- ## assume role
 -
 -
 - ### **Examples**
