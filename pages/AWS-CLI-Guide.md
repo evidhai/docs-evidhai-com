@@ -121,6 +121,9 @@ This covers basics to know , on AWS CLI and reference links included.
 	-
 	- ## Assume role and set profile
 	- ```
+	  aws sts assume-role --profile dev --role-arn arn:aws:iam::ACCOUNT_ID:role/s3-admin --role-session-name cli-session --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' --output text | \
+	  read a b c && aws configure set profile.assumed-role.aws_access_key_id $a && aws configure set profile.assumed-role.aws_secret_access_key $b && aws configure set profile.assumed-role.aws_session_token $c
+	  
 	  ```
 	- To unset all profile
 	- ```bash
