@@ -52,11 +52,9 @@ This covers basics to know , on AWS CLI and reference links included.
 	- Default output format (json, text, table)
 	- ### Alternate way
 		- ```
-		  export AWS_ACCESS_KEY_ID=ASIAxxxxxxxxxxxx
-		  export AWS_SECRET_ACCESS_KEY=yourSecretKeyHere
+		  export AWS_ACCESS_KEY_ID=<<key_id>>
+		  export AWS_SECRET_ACCESS_KEY=<<key>>
 		  ```
-		-
-		-
 	-
 - ## **Basic CLI Usage**
 	- ### **Syntax**
