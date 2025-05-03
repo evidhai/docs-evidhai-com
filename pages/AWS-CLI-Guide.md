@@ -74,7 +74,8 @@ This covers basics to know , on AWS CLI and reference links included.
 	  aws sts assume-role --role-arn <<s3-iam-arn>> --role-session-name s3-admin
 	  ```
 	- ### One liner
-	-
+	- ```bash
+	  ```
 - ### **Examples**
   
   ```bash
