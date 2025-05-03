@@ -50,7 +50,14 @@ This covers basics to know , on AWS CLI and reference links included.
 	- Secret Access Key
 	- Default region (e.g., us-east-1)
 	- Default output format (json, text, table)
-	- ---
+	- ### Alternate way
+		- ```
+		  export AWS_ACCESS_KEY_ID=ASIAxxxxxxxxxxxx
+		  export AWS_SECRET_ACCESS_KEY=yourSecretKeyHere
+		  ```
+		-
+		-
+	-
 - ## **Basic CLI Usage**
 	- ### **Syntax**
 	  
