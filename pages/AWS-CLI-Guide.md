@@ -119,7 +119,14 @@ This covers basics to know , on AWS CLI and reference links included.
 	  aws s3 ls --profile dev
 	  ```
 	-
+	- To unset all profile
 	- ```bash
+	  unset AWS_ACCESS_KEY_ID
+	  unset AWS_SECRET_ACCESS_KEY
+	  unset AWS_SESSION_TOKEN
+	  unset AWS_SECURITY_TOKEN
+	  unset AWS_PROFILE
+	  
 	  ```
 	- ### **Output Formats**
 	  
