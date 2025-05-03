@@ -88,6 +88,8 @@ This covers basics to know , on AWS CLI and reference links included.
 	  
 	  aws s3 ls                       *# List all buckets*
 	  ```
+-
+-
 - ### **Output Formats**
   
   ```bash
@@ -159,13 +161,6 @@ This covers basics to know , on AWS CLI and reference links included.
   aws configure --profile dev
   
   aws s3 ls --profile dev
-  
-  ```
-- ### **Assume Role**
-  
-  ```bash
-  
-  aws sts assume-role --role-arn arn:aws:iam::123456789012:role/demo --role-session-name demoSession
   
   ```
 - ### **Waiters**
