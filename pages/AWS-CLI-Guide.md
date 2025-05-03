@@ -238,12 +238,7 @@ This covers basics to know , on AWS CLI and reference links included.
   done
   
   ```
-- ### **Scheduled Automation**
-- Use `cron` jobs (Linux/macOS)
-- Use AWS Systems Manager Automation
-  
-  ---
-- ## **7. Pagination and Querying**
+- ## **Pagination and Querying**
 - ### **Pagination**
   
   Most commands paginate by default.
