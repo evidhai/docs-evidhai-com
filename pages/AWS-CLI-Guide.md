@@ -115,18 +115,21 @@ This covers basics to know , on AWS CLI and reference links included.
 -
 - ### CLI Profile
 	- ```bash
-	- aws configure --profile dev
-	- aws s3 ls --profile dev
-	- ```
-- ### **Output Formats**
-  
-  ```bash
-  
-  --output json|text|table
-  
-  ```
-  
-  ---
+	  aws configure --profile dev
+	  aws s3 ls --profile dev
+	  ```
+	-
+	- ```bash
+	  ```
+	- ### **Output Formats**
+	  
+	  ```bash
+	  
+	  --output json|text|table
+	  
+	  ```
+	  
+	  ---
 - ## **4. Common AWS Services with CLI**
 - ### **S3 (Simple Storage Service)**
   
