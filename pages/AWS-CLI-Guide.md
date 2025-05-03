@@ -91,8 +91,15 @@ This covers basics to know , on AWS CLI and reference links included.
 	  
 	  aws s3 ls                       *# List all buckets*
 	  ```
+	- ### Move to different role
+		- Unset
+		- ```bash
+		  unset AWS_ACCESS_KEY_ID
+		  unset AWS_SECRET_ACCESS_KEY
+		  unset AWS_SESSION_TOKEN
+		  ```
 -
--
+	-
 - ### **Output Formats**
   
   ```bash
