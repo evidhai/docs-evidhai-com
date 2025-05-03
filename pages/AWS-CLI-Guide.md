@@ -92,7 +92,6 @@ This covers basics to know , on AWS CLI and reference links included.
 	  aws s3 ls                       *# List all buckets*
 	  ```
 	- ### Move to different role
-	  collapsed:: true
 		- Unset
 		- ```bash
 		  unset AWS_ACCESS_KEY_ID
@@ -115,7 +114,10 @@ This covers basics to know , on AWS CLI and reference links included.
 			-
 -
 - ### CLI Profile
-	-
+	- ```bash
+	- aws configure --profile dev
+	- aws s3 ls --profile dev
+	- ```
 - ### **Output Formats**
   
   ```bash
@@ -180,15 +182,6 @@ This covers basics to know , on AWS CLI and reference links included.
   
   ---
 - ## **5. Advanced CLI Usage**
-- ### **Profiles**
-  
-  ```bash
-  
-  aws configure --profile dev
-  
-  aws s3 ls --profile dev
-  
-  ```
 - ### **Waiters**
   
   ```bash
