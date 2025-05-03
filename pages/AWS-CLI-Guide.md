@@ -69,9 +69,12 @@ This covers basics to know , on AWS CLI and reference links included.
 	  ```
 -
 	- ## assume role
+	- ### Get Temp creds
 	- ```bash
+	  aws sts assume-role --role-arn <<s3-iam-arn>> --role-session-name s3-admin
 	  ```
--
+	- ### One liner
+	-
 - ### **Examples**
   
   ```bash
