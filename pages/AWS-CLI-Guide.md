@@ -8,51 +8,51 @@ This covers basics to know , on AWS CLI and reference links included.
   AWS CLI is an AWS native tools, which enables to interact with AWS services using commands in your terminal. It supports all AWS services and helps automate your workflows.
   
   ---
-- ## **2. Installation and Configuration**
-- ### **Install AWS CLI**
-- ****Windows/macOS/Linux****: [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-  
-  ```bash
-  
-  *# Windows (Using MSI Installer)*
-  
-  *# Download and run the installer from:*
-  
-  *# https://awscli.amazonaws.com/AWSCLIV2.msi*
-  
-  *# Or use Chocolatey*
-  
-  choco install awscli
-  
-  *# macOS (Homebrew)*
-  
-  brew install awscli
-  
-  *# Ubuntu*
-  
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-  
-  unzip awscliv2.zip
-  
-  sudo ./aws/install
-  
-  ```
-- ### **Configure AWS CLI**
-  
-  ```bash
-  
-  aws configure
-  
-  ```
-  
-  Input:
-- Access Key ID
-- Secret Access Key
-- Default region (e.g., us-east-1)
-- Default output format (json, text, table)
-  
-  ---
-- ## ** Basic CLI Usage**
+- ## **Installation and Configuration**
+	- ### **Install AWS CLI**
+	- ****Windows/macOS/Linux****: [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+	  
+	  ```bash
+	  
+	  *# Windows (Using MSI Installer)*
+	  
+	  *# Download and run the installer from:*
+	  
+	  *# https://awscli.amazonaws.com/AWSCLIV2.msi*
+	  
+	  *# Or use Chocolatey*
+	  
+	  choco install awscli
+	  
+	  *# macOS (Homebrew)*
+	  
+	  brew install awscli
+	  
+	  *# Ubuntu*
+	  
+	  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+	  
+	  unzip awscliv2.zip
+	  
+	  sudo ./aws/install
+	  
+	  ```
+	- ### **Configure AWS CLI**
+	  
+	  ```bash
+	  
+	  aws configure
+	  
+	  ```
+	  
+	  Input:
+	- Access Key ID
+	- Secret Access Key
+	- Default region (e.g., us-east-1)
+	- Default output format (json, text, table)
+	  
+	  ---
+- ## **Basic CLI Usage**
 - Basic CLI Usage**
 - ### **Syntax**
   
@@ -66,6 +66,10 @@ This covers basics to know , on AWS CLI and reference links included.
 - ```bash
   aws sts get-caller-identity
   ```
+-
+- ## assume role
+-
+-
 - ### **Examples**
   
   ```bash
