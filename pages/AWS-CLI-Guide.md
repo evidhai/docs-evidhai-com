@@ -69,7 +69,8 @@ This covers basics to know , on AWS CLI and reference links included.
 	  ```
 -
 	- ## assume role
--
+	- ```bash
+	  ```
 -
 - ### **Examples**
   
