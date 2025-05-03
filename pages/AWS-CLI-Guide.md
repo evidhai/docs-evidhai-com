@@ -1,9 +1,8 @@
-# **AWS CLI: Beginner to Pro - Hands-On Guide**
+# **AWS CLI: Walkthrough**
 
-Welcome to your AWS CLI (Command Line Interface) journey! This guide is structured to take you from a complete beginner to an advanced user with real-world, hands-on experience.
+Thi
 
 ---
-- ---
 - ## **1. Introduction**
   
   AWS CLI is a powerful tool to interact with AWS services using commands in your terminal. It supports all AWS services and helps automate your workflows.
