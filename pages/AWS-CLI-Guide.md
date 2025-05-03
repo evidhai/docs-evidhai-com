@@ -52,7 +52,8 @@ This covers basics to know , on AWS CLI and reference links included.
 - Default output format (json, text, table)
   
   ---
-- ## **3. Basic CLI Usage**
+- ## ** Basic CLI Usage**
+- Basic CLI Usage**
 - ### **Syntax**
   
   ```bash
@@ -60,6 +61,9 @@ This covers basics to know , on AWS CLI and reference links included.
   aws <service> <operation> [parameters]
   
   ```
+- ### Who you are?
+-
+-
 - ### **Examples**
   
   ```bash
