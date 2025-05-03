@@ -98,6 +98,11 @@ This covers basics to know , on AWS CLI and reference links included.
 		  unset AWS_SECRET_ACCESS_KEY
 		  unset AWS_SESSION_TOKEN
 		  ```
+		- Set config of user
+		- ```bash
+		  export AWS_ACCESS_KEY_ID=<<key_id>>
+		  export AWS_SECRET_ACCESS_KEY=<<key>>
+		  ```
 -
 	-
 - ### **Output Formats**
