@@ -77,14 +77,12 @@ This covers basics to know , on AWS CLI and reference links included.
 		  aws sts assume-role --role-arn <<s3-iam-arn>> --role-session-name s3-admin
 		  ```
 		- ### One liner
-		- ```bash
-		  eval $(aws sts assume-role \
+		- eval $(aws sts assume-role \
 		    --role-arn <<replace iam role arn>> \
 		    --role-session-name cli-session \
 		    --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]' \
 		    --output text | \
 		  awk '{print "export AWS_ACCESS_KEY_ID="$1"\nexport AWS_SECRET_ACCESS_KEY="$2"\nexport AWS_SESSION_TOKEN="$3}')
-		  ```
 	- ### **Examples**
 	  
 	  ```bash
