@@ -1524,6 +1524,7 @@
 		  
 		  <!-- notionvc: 9b7b19be-0252-4f41-bfbe-ab24caf71f15 -->
 - Day 18
+  collapsed:: true
 	- ## KMS
 	- Components of KMS
 		- AWS KMS Keys are primary keys used for cryptographic operations like
@@ -1580,3 +1581,17 @@
 		- CloudTrail maintains a detailed audit of API calls and configuration changes, aiding in governance and regulatory compliance.
 		- Each recorded event includes comprehensive information such as the 
 		  principal, account ID, username, event time, source, and more.
+- Day 19
+	- AWS Sagemaker Jump start
+		- Foundation Models are widely used due to their general knowledge base and ability to be customized for specific use cases.
+		- AWS offers services like Amazon Bedrock and SageMaker JumpStart to facilitate access to these models.
+		- SageMaker JumpStart is integrated into SageMaker Studio, providing a
+		  hub of pre-trained Foundation Models for customization and evaluation.
+		- It offers both proprietary and publicly available models for various
+		  applications, including text and image generation, computer vision, and
+		  natural language processing.
+		- Users can access JumpStart through SageMaker Studio or the Amazon SageMaker console, where they can select and deploy models.
+		- JumpStart provides example scripts and notebooks to help users set up, deploy, and evaluate models.
+		- Users can train, deploy, and evaluate models, with options to fine-tune datasets and customize deployment settings.
+		- JumpStart simplifies the use of Foundation Models while allowing control over infrastructure and deployment details.
+-
