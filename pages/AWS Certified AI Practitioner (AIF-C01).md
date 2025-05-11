@@ -1582,6 +1582,7 @@
 		- Each recorded event includes comprehensive information such as the 
 		  principal, account ID, username, event time, source, and more.
 - Day 19
+  collapsed:: true
 	- AWS Sagemaker Jump start
 		- Foundation Models are widely used due to their general knowledge base and ability to be customized for specific use cases.
 		- AWS offers services like Amazon Bedrock and SageMaker JumpStart to facilitate access to these models.
