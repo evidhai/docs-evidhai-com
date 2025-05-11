@@ -1595,4 +1595,10 @@
 		- JumpStart provides example scripts and notebooks to help users set up, deploy, and evaluate models.
 		- Users can train, deploy, and evaluate models, with options to fine-tune datasets and customize deployment settings.
 		- JumpStart simplifies the use of Foundation Models while allowing control over infrastructure and deployment details.
--
+- Day 20
+	- General Model Evaluation Techniques
+		- ROC and AUC are used to evaluate model performance across different thresholds, especially for imbalanced classes.
+		- RMSE is specific to regression models, indicating how close predictions are to actual values.
+		- The choice of metrics depends on the model type, algorithm, and 
+		  business goals, with tools like SageMaker offering built-in metrics and 
+		  visualizations to assist in evaluation.
