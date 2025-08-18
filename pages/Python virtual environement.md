@@ -53,7 +53,7 @@
   pip freeze > requirements.txt
   ```
 -
-- ### Install from file (for teammates)
+- ### Install from file (to recreate later)
   ```bash
   pip install -r requirements.txt
   ```
