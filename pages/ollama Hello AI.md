@@ -1,4 +1,6 @@
-- [[Python virtual environement]] We have seen how to create virtual python environment to isolate the environment
+- #agentic_ai
+-
+- [[Python virtual environment]] We have seen how to create virtual python environment to isolate the environment
 -
 - Install ollama on your system. Once installed get it running on terminal
 	- Also install python ollama package

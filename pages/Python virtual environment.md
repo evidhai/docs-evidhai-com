@@ -1,4 +1,4 @@
-- #how_to
+- #how_to #agentic_ai
 - > Article written by AI but facts are valid
 -
 - ## 💡 What is a Virtual Environment?
