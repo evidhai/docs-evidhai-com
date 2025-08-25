@@ -1,0 +1,17 @@
+- #agentic_ai
+- Today is about exploring Bedrock service on console,
+	- Getting to know gaining model access
+	- Testing models
+	- Comparing models
+	- Playing with image generations
+	-
+-
+- Get yourself model access granted
+	- ![image.png](../assets/image_1756131305705_0.png)
+- Bedrock offers your playgrounds to test your model
+	- ![image.png](../assets/image_1756131359569_0.png)
+- On Text Lab choose the model that you want to test
+	- ![image.png](../assets/image_1756132265187_0.png)
+- Not sure what model to choose ? They offer Compare functionality
+	- ![image.png](../assets/image_1756132615971_0.png)
+	-
